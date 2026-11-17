@@ -2,6 +2,13 @@
   min-height: 11rem;
 }
 
+.chart-source {
+  margin-top: 0.875rem;
+  color: #64748b;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
 .chart-rows {
   display: grid;
   gap: 1rem;

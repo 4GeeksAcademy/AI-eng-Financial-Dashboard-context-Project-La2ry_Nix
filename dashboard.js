@@ -30,7 +30,7 @@
 
     const observer = new Observer(async (entries, activeObserver) => {
       for (const entry of entries) {
-        if (!entry.isIntersecting) return;
+        if (!entry.isIntersecting) continue;
         await hydrateChart(entry.target, loadRenderer);
         activeObserver.unobserve(entry.target);
       }
