@@ -1,6 +1,12 @@
 (function (root) {
   "use strict";
 
+  const escapeHtml = root.escapeHtml || function escapeHtml(value) {
+    return String(value).replace(/[&<>"']/g, (character) => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+    })[character]);
+  };
+
   const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", {
     style: "currency", currency, maximumFractionDigits: 0,
   }).format(amount);
@@ -80,15 +86,11 @@
         queue(entry.target);
         observer.unobserve(entry.target);
       });
+    // Trigger charts ~160px before the element comes into view, so Chart.js
+    // module loading and canvas rendering finish before the user scrolls there.
     }, { rootMargin: "160px" });
     charts.forEach((chart) => observer.observe(chart));
     return chartInstances;
-  }
-
-  function escapeHtml(value) {
-    return String(value).replace(/[&<>"']/g, (character) => ({
-      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
-    })[character]);
   }
 
   function getAsOf() { return new Date("2026-11-17T00:00:00"); }

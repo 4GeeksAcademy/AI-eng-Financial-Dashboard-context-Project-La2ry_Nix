@@ -15,6 +15,7 @@ assert.match(html, /<title>Influencer Analytics Dashboard/);
 assert.match(html, /<meta\s+name="description"/);
 assert.match(html, /<script src="dashboard\.js" defer><\/script>/);
 assert.match(html, /<link rel="stylesheet" href="dashboard\.css"/);
+assert.match(html, /<script src="shared-utils\.js"><\/script>/);
 assert.equal((html.match(/data-lazy-chart/g) || []).length, 2);
 assert.equal((html.match(/data-chart-data/g) || []).length, 2);
 assert.match(js, /IntersectionObserver/);

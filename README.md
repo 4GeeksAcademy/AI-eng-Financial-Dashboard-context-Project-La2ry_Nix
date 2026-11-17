@@ -1,41 +1,52 @@
-# HTML Hello
+# Influencer Analytics Dashboard
 
-The most basic boilerplate for any 4Geeks Academy student, start your very first website from scratch.
+A responsive creator analytics dashboard for reviewing commissions, product revenue, conversions, and platform performance. Built with semantic HTML, Tailwind utility classes, vanilla JavaScript, local JSON data, and on-demand Chart.js charts.
 
-> There is a video tutorial on [how to use this template to create your very first website here](https://youtu.be/dfbDCMu_p-0).
+## Features
 
-## What to do next?
+- **KPI overview:** Revenue, sales, commissions, and reach-weighted engagement calculated from the same dataset.
+- **Chart.js visualizations:** Revenue comparison and conversion funnel, initialized near the viewport. Each chart has an accessible data-table equivalent and a sample-data source/date note.
+- **JSON data source:** `data/dashboard.json` is fetched at runtime, with a status message if loading fails.
+- **Filtering and sorting:** Filter products by product/platform text, sort by revenue/name/units/commission, and narrow KPI and chart values by platform.
+- **Theme switch:** Light and dark themes, with selection persisted in local storage.
+- **Responsive layout:** Dashboard cards and controls adapt to mobile and desktop widths.
 
-Create an `index.html` file with the [basic HTML structure](http://4geeks.com/lesson/what-is-html-learn-html#page-structure) and see it live by running a web-server using the following command:
+## Preview
+
+Run the Flask preview server from the repository root:
 
 ```bash
-$ pip3 install flask && python3 server.py
+pip3 install Flask
+python3 server.py
 ```
 
-- You can create as many HTML files as you want.
-- You can also create CSS files and import them into your website using a `<link>` tag placed between the `<head></head>` tags, like this:
+Then open the forwarded port `3000`. The dashboard loads JSON and Chart.js over HTTP; opening `index.html` directly as a `file://` URL is not supported.
 
-```html
-<head>
-  ...
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
+## Data and calculations
+
+Edit `data/dashboard.json` to update products, platforms, alerts, reporting period, and commission rate. The figures are illustrative sample data, not a live account integration.
+
+- Product commission = revenue × commission rate.
+- Revenue and sales KPIs sum values for the active platform filter.
+- Engagement rate is weighted by platform reach, rather than averaging rates equally.
+- Funnel totals reflect the selected platform(s).
+
+## Development checks
+
+```bash
+npm run lint
+npm test
+npm run build
 ```
 
-- If you want to use Tailwind CSS, add it optionally via the official Tailwind CSS v4 CDN inside the same `<head>`:
+## Screenshots
 
-```html
-<head>
-  ...
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  ...
-</head>
+Screenshots are not checked into the repository yet. After previewing the page at desktop and mobile widths, add captures such as `docs/screenshots/dashboard-desktop.png` and embed them here:
+
+```md
+![Dashboard desktop screenshot](docs/screenshots/dashboard-desktop.png)
 ```
 
-### Contributors
+## Deploy to GitHub Pages
 
-This template was built as part of the [Full Stack Developer course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer) at [4Geeks Academy Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and [many other contributors](https://github.com/4GeeksAcademy/html-hello/graphs/contributors).
-
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
+This is a static site and needs no build output. In repository **Settings → Pages**, choose **Deploy from a branch**, then select the branch approved for publishing and `/ (root)`. Ensure `index.html`, `dashboard.js`, `dashboard.css`, and `data/dashboard.json` are all included in that published branch. The dashboard uses a CDN Chart.js module; deployment needs network access to that CDN.
