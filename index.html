@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Influencer Performance Dashboard</title>
+    <title>Influencer Analytics Dashboard | Performance &amp; Revenue</title>
+    <meta
+      name="description"
+      content="Track creator commissions, product revenue, platform performance, and conversion results in your influencer analytics dashboard."
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="dashboard.css" />
+    <script src="dashboard.js" defer></script>
   </head>
   <body class="min-h-screen bg-slate-100 p-4 text-slate-800 antialiased sm:p-6 lg:p-8">
     <main class="mx-auto max-w-7xl space-y-6">
@@ -65,34 +71,18 @@
             <h2 class="text-lg font-semibold text-slate-900">Revenue by product</h2>
             <span class="text-xs font-medium text-slate-500">Share</span>
           </div>
-          <div class="space-y-4">
-            <div>
-              <div class="mb-1 flex items-center justify-between text-sm text-slate-600">
-                <span>Product A</span>
-                <span class="font-semibold text-slate-800">$4,000</span>
-              </div>
-              <div class="h-2.5 rounded-full bg-slate-100">
-                <div class="h-2.5 w-[40%] rounded-full bg-violet-500"></div>
-              </div>
-            </div>
-            <div>
-              <div class="mb-1 flex items-center justify-between text-sm text-slate-600">
-                <span>Product B</span>
-                <span class="font-semibold text-slate-800">$3,000</span>
-              </div>
-              <div class="h-2.5 rounded-full bg-slate-100">
-                <div class="h-2.5 w-[30%] rounded-full bg-violet-500"></div>
-              </div>
-            </div>
-            <div>
-              <div class="mb-1 flex items-center justify-between text-sm text-slate-600">
-                <span>Product C</span>
-                <span class="font-semibold text-slate-800">$2,960</span>
-              </div>
-              <div class="h-2.5 rounded-full bg-slate-100">
-                <div class="h-2.5 w-[30%] rounded-full bg-violet-500"></div>
-              </div>
-            </div>
+          <div class="lazy-chart" data-lazy-chart data-scale="total">
+            <div class="chart-output" aria-hidden="true"></div>
+            <p class="chart-placeholder text-sm text-slate-500">Chart loads when it enters the viewport.</p>
+            <table class="sr-only" data-chart-data>
+              <caption>Revenue by product in US dollars</caption>
+              <thead><tr><th scope="col">Product</th><th scope="col">Revenue</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Product A</th><td>$4,000</td></tr>
+                <tr><th scope="row">Product B</th><td>$3,000</td></tr>
+                <tr><th scope="row">Product C</th><td>$2,960</td></tr>
+              </tbody>
+            </table>
           </div>
         </article>
 
@@ -131,34 +121,18 @@
             <h2 class="text-lg font-semibold text-slate-900">Conversion funnel</h2>
             <span class="text-xs font-medium text-slate-500">Stage</span>
           </div>
-          <div class="space-y-4">
-            <div>
-              <div class="mb-1 flex items-center justify-between text-sm text-slate-600">
-                <span>Reach</span>
-                <span class="font-semibold text-slate-800">90.3k</span>
-              </div>
-              <div class="h-2.5 rounded-full bg-slate-100">
-                <div class="h-2.5 w-[100%] rounded-full bg-sky-500"></div>
-              </div>
-            </div>
-            <div>
-              <div class="mb-1 flex items-center justify-between text-sm text-slate-600">
-                <span>Clicks</span>
-                <span class="font-semibold text-slate-800">3.5k</span>
-              </div>
-              <div class="h-2.5 rounded-full bg-slate-100">
-                <div class="h-2.5 w-[58%] rounded-full bg-sky-500"></div>
-              </div>
-            </div>
-            <div>
-              <div class="mb-1 flex items-center justify-between text-sm text-slate-600">
-                <span>Conversions</span>
-                <span class="font-semibold text-slate-800">142</span>
-              </div>
-              <div class="h-2.5 rounded-full bg-slate-100">
-                <div class="h-2.5 w-[23%] rounded-full bg-emerald-500"></div>
-              </div>
-            </div>
+          <div class="lazy-chart" data-lazy-chart data-scale="maximum">
+            <div class="chart-output" aria-hidden="true"></div>
+            <p class="chart-placeholder text-sm text-slate-500">Chart loads when it enters the viewport.</p>
+            <table class="sr-only" data-chart-data>
+              <caption>Conversion funnel counts</caption>
+              <thead><tr><th scope="col">Stage</th><th scope="col">Count</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Reach</th><td>90,300</td></tr>
+                <tr><th scope="row">Clicks</th><td>3,500</td></tr>
+                <tr><th scope="row">Conversions</th><td>142</td></tr>
+              </tbody>
+            </table>
           </div>
         </article>
       </section>

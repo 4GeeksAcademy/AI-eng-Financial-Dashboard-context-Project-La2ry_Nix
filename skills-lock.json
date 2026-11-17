@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "skills": {
+    "chart-checklist": {
+      "source": "olitreadwell/chart-checklist",
+      "commit": "6f9469410a2bda411da9c954b87607e98a895e01",
+      "sourceType": "github",
+      "skillPath": "skills/chart-checklist/SKILL.md",
+      "computedHash": "9582c3ec613bd6ed0926d97a8031e14596b5e4773ef78fdaf5723a8a46b67ad7",
+      "installMode": "copy"
+    }
+  }
+}

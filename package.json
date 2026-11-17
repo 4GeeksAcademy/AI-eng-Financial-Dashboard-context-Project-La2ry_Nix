@@ -1,0 +1,10 @@
+{
+  "name": "influencer-analytics-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "node --check dashboard.js && node --check chart-renderer.mjs && node --check dashboard.test.js && node --check scripts/verify-build.js",
+    "test": "node --test dashboard.test.js",
+    "build": "node scripts/verify-build.js"
+  }
+}

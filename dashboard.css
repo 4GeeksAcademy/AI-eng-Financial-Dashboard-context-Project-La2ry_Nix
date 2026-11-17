@@ -1,0 +1,47 @@
+.lazy-chart {
+  min-height: 11rem;
+}
+
+.chart-rows {
+  display: grid;
+  gap: 1rem;
+}
+
+.chart-row-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+  color: #475569;
+  font-size: 0.875rem;
+}
+
+.chart-row-value {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.chart-track {
+  height: 0.625rem;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: #f1f5f9;
+}
+
+.chart-bar {
+  height: 100%;
+  min-width: 0.25rem;
+  border-radius: inherit;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .chart-bar {
+    animation: chart-grow 350ms ease-out both;
+    transform-origin: left;
+  }
+
+  @keyframes chart-grow {
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
+  }
+}
