@@ -1,0 +1,3320 @@
+{
+  "period": "Last 60 days",
+  "asOf": "2026-11-17",
+  "currency": "USD",
+  "commissionRate": 0.15,
+  "products": [
+    {
+      "name": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 2436,
+      "revenue": 292320
+    },
+    {
+      "name": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 2313,
+      "revenue": 185040
+    },
+    {
+      "name": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 2506,
+      "revenue": 125300
+    }
+  ],
+  "platforms": [
+    {
+      "name": "Instagram",
+      "reach": 2499361,
+      "engagementRate": 198.0,
+      "clicks": 98735,
+      "conversions": 4938,
+      "revenue": 342723,
+      "roasSum": 221.60000000000002,
+      "count": 60,
+      "roas": 3.7
+    },
+    {
+      "name": "TikTok",
+      "reach": 1717417,
+      "engagementRate": 123.3,
+      "clicks": 67485,
+      "conversions": 3547,
+      "revenue": 240897,
+      "roasSum": 232.4,
+      "count": 60,
+      "roas": 3.9
+    },
+    {
+      "name": "YouTube",
+      "reach": 1162953,
+      "engagementRate": 87.6,
+      "clicks": 49240,
+      "conversions": 2218,
+      "revenue": 180772,
+      "roasSum": 231.30000000000004,
+      "count": 60,
+      "roas": 3.9
+    }
+  ],
+  "dailyRecords": [
+    {
+      "date": "2026-09-19",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 38,
+      "revenue": 1900
+    },
+    {
+      "date": "2026-09-19",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 37,
+      "revenue": 4440
+    },
+    {
+      "date": "2026-09-19",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 38,
+      "revenue": 3040
+    },
+    {
+      "date": "2026-09-19",
+      "platform": "Instagram",
+      "reach": 45609,
+      "engagementRate": 7.2,
+      "clicks": 2539,
+      "conversions": 64,
+      "roas": 3.4,
+      "revenue": 5304
+    },
+    {
+      "date": "2026-09-19",
+      "platform": "TikTok",
+      "reach": 21913,
+      "engagementRate": 8.4,
+      "clicks": 461,
+      "conversions": 14,
+      "roas": 4.4,
+      "revenue": 1675
+    },
+    {
+      "date": "2026-09-19",
+      "platform": "YouTube",
+      "reach": 24617,
+      "engagementRate": 5.2,
+      "clicks": 1289,
+      "conversions": 26,
+      "roas": 5.1,
+      "revenue": 5277
+    },
+    {
+      "date": "2026-09-20",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 55,
+      "revenue": 2750
+    },
+    {
+      "date": "2026-09-20",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 36,
+      "revenue": 4320
+    },
+    {
+      "date": "2026-09-20",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 45,
+      "revenue": 3600
+    },
+    {
+      "date": "2026-09-20",
+      "platform": "Instagram",
+      "reach": 46467,
+      "engagementRate": 7.0,
+      "clicks": 1101,
+      "conversions": 28,
+      "roas": 5.3,
+      "revenue": 4196
+    },
+    {
+      "date": "2026-09-20",
+      "platform": "TikTok",
+      "reach": 32241,
+      "engagementRate": 5.8,
+      "clicks": 1336,
+      "conversions": 104,
+      "roas": 3.2,
+      "revenue": 4884
+    },
+    {
+      "date": "2026-09-20",
+      "platform": "YouTube",
+      "reach": 22121,
+      "engagementRate": 3.0,
+      "clicks": 1204,
+      "conversions": 65,
+      "roas": 4.7,
+      "revenue": 2573
+    },
+    {
+      "date": "2026-09-21",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 41,
+      "revenue": 2050
+    },
+    {
+      "date": "2026-09-21",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 49,
+      "revenue": 5880
+    },
+    {
+      "date": "2026-09-21",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 47,
+      "revenue": 3760
+    },
+    {
+      "date": "2026-09-21",
+      "platform": "Instagram",
+      "reach": 43849,
+      "engagementRate": 8.4,
+      "clicks": 1991,
+      "conversions": 83,
+      "roas": 3.2,
+      "revenue": 5233
+    },
+    {
+      "date": "2026-09-21",
+      "platform": "TikTok",
+      "reach": 31792,
+      "engagementRate": 7.7,
+      "clicks": 1459,
+      "conversions": 82,
+      "roas": 2.3,
+      "revenue": 6109
+    },
+    {
+      "date": "2026-09-21",
+      "platform": "YouTube",
+      "reach": 30478,
+      "engagementRate": 5.6,
+      "clicks": 1815,
+      "conversions": 105,
+      "roas": 4.0,
+      "revenue": 7357
+    },
+    {
+      "date": "2026-09-22",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 50,
+      "revenue": 2500
+    },
+    {
+      "date": "2026-09-22",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 51,
+      "revenue": 6120
+    },
+    {
+      "date": "2026-09-22",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 22,
+      "revenue": 1760
+    },
+    {
+      "date": "2026-09-22",
+      "platform": "Instagram",
+      "reach": 42267,
+      "engagementRate": 7.8,
+      "clicks": 1378,
+      "conversions": 49,
+      "roas": 2.4,
+      "revenue": 6653
+    },
+    {
+      "date": "2026-09-22",
+      "platform": "TikTok",
+      "reach": 32499,
+      "engagementRate": 7.2,
+      "clicks": 1502,
+      "conversions": 65,
+      "roas": 5.6,
+      "revenue": 5071
+    },
+    {
+      "date": "2026-09-22",
+      "platform": "YouTube",
+      "reach": 18448,
+      "engagementRate": 5.9,
+      "clicks": 783,
+      "conversions": 28,
+      "roas": 4.1,
+      "revenue": 3674
+    },
+    {
+      "date": "2026-09-23",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 33,
+      "revenue": 1650
+    },
+    {
+      "date": "2026-09-23",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 44,
+      "revenue": 5280
+    },
+    {
+      "date": "2026-09-23",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 54,
+      "revenue": 4320
+    },
+    {
+      "date": "2026-09-23",
+      "platform": "Instagram",
+      "reach": 42007,
+      "engagementRate": 7.8,
+      "clicks": 1024,
+      "conversions": 59,
+      "roas": 5.1,
+      "revenue": 3344
+    },
+    {
+      "date": "2026-09-23",
+      "platform": "TikTok",
+      "reach": 30239,
+      "engagementRate": 9.5,
+      "clicks": 1809,
+      "conversions": 93,
+      "roas": 5.9,
+      "revenue": 8289
+    },
+    {
+      "date": "2026-09-23",
+      "platform": "YouTube",
+      "reach": 20705,
+      "engagementRate": 7.2,
+      "clicks": 978,
+      "conversions": 51,
+      "roas": 2.7,
+      "revenue": 3836
+    },
+    {
+      "date": "2026-09-24",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 41,
+      "revenue": 2050
+    },
+    {
+      "date": "2026-09-24",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 49,
+      "revenue": 5880
+    },
+    {
+      "date": "2026-09-24",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 48,
+      "revenue": 3840
+    },
+    {
+      "date": "2026-09-24",
+      "platform": "Instagram",
+      "reach": 30220,
+      "engagementRate": 8.5,
+      "clicks": 1663,
+      "conversions": 59,
+      "roas": 3.8,
+      "revenue": 4217
+    },
+    {
+      "date": "2026-09-24",
+      "platform": "TikTok",
+      "reach": 38024,
+      "engagementRate": 6.5,
+      "clicks": 1214,
+      "conversions": 70,
+      "roas": 4.2,
+      "revenue": 2984
+    },
+    {
+      "date": "2026-09-24",
+      "platform": "YouTube",
+      "reach": 19288,
+      "engagementRate": 2.9,
+      "clicks": 986,
+      "conversions": 51,
+      "roas": 1.5,
+      "revenue": 2930
+    },
+    {
+      "date": "2026-09-25",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 67,
+      "revenue": 3350
+    },
+    {
+      "date": "2026-09-25",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 43,
+      "revenue": 5160
+    },
+    {
+      "date": "2026-09-25",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 56,
+      "revenue": 4480
+    },
+    {
+      "date": "2026-09-25",
+      "platform": "Instagram",
+      "reach": 35583,
+      "engagementRate": 7.2,
+      "clicks": 1961,
+      "conversions": 150,
+      "roas": 1.9,
+      "revenue": 6781
+    },
+    {
+      "date": "2026-09-25",
+      "platform": "TikTok",
+      "reach": 31015,
+      "engagementRate": 10.4,
+      "clicks": 1570,
+      "conversions": 43,
+      "roas": 3.6,
+      "revenue": 5729
+    },
+    {
+      "date": "2026-09-25",
+      "platform": "YouTube",
+      "reach": 22361,
+      "engagementRate": 4.5,
+      "clicks": 825,
+      "conversions": 26,
+      "roas": 3.9,
+      "revenue": 3456
+    },
+    {
+      "date": "2026-09-26",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 64,
+      "revenue": 3200
+    },
+    {
+      "date": "2026-09-26",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 43,
+      "revenue": 5160
+    },
+    {
+      "date": "2026-09-26",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 49,
+      "revenue": 3920
+    },
+    {
+      "date": "2026-09-26",
+      "platform": "Instagram",
+      "reach": 49340,
+      "engagementRate": 7.3,
+      "clicks": 1851,
+      "conversions": 94,
+      "roas": 2.0,
+      "revenue": 4949
+    },
+    {
+      "date": "2026-09-26",
+      "platform": "TikTok",
+      "reach": 25898,
+      "engagementRate": 9.8,
+      "clicks": 756,
+      "conversions": 25,
+      "roas": 1.8,
+      "revenue": 2943
+    },
+    {
+      "date": "2026-09-26",
+      "platform": "YouTube",
+      "reach": 20232,
+      "engagementRate": 8.0,
+      "clicks": 1100,
+      "conversions": 26,
+      "roas": 2.6,
+      "revenue": 4407
+    },
+    {
+      "date": "2026-09-27",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 41,
+      "revenue": 2050
+    },
+    {
+      "date": "2026-09-27",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 46,
+      "revenue": 5520
+    },
+    {
+      "date": "2026-09-27",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 54,
+      "revenue": 4320
+    },
+    {
+      "date": "2026-09-27",
+      "platform": "Instagram",
+      "reach": 39535,
+      "engagementRate": 4.8,
+      "clicks": 2067,
+      "conversions": 64,
+      "roas": 1.9,
+      "revenue": 6806
+    },
+    {
+      "date": "2026-09-27",
+      "platform": "TikTok",
+      "reach": 30897,
+      "engagementRate": 6.6,
+      "clicks": 1518,
+      "conversions": 91,
+      "roas": 5.9,
+      "revenue": 3484
+    },
+    {
+      "date": "2026-09-27",
+      "platform": "YouTube",
+      "reach": 21391,
+      "engagementRate": 3.7,
+      "clicks": 1165,
+      "conversions": 40,
+      "roas": 2.4,
+      "revenue": 3897
+    },
+    {
+      "date": "2026-09-28",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 46,
+      "revenue": 2300
+    },
+    {
+      "date": "2026-09-28",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 31,
+      "revenue": 3720
+    },
+    {
+      "date": "2026-09-28",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 44,
+      "revenue": 3520
+    },
+    {
+      "date": "2026-09-28",
+      "platform": "Instagram",
+      "reach": 42113,
+      "engagementRate": 10.8,
+      "clicks": 1588,
+      "conversions": 113,
+      "roas": 4.0,
+      "revenue": 3417
+    },
+    {
+      "date": "2026-09-28",
+      "platform": "TikTok",
+      "reach": 38907,
+      "engagementRate": 8.1,
+      "clicks": 2286,
+      "conversions": 172,
+      "roas": 5.3,
+      "revenue": 5712
+    },
+    {
+      "date": "2026-09-28",
+      "platform": "YouTube",
+      "reach": 15346,
+      "engagementRate": 4.9,
+      "clicks": 553,
+      "conversions": 13,
+      "roas": 3.2,
+      "revenue": 2740
+    },
+    {
+      "date": "2026-09-29",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 37,
+      "revenue": 1850
+    },
+    {
+      "date": "2026-09-29",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 60,
+      "revenue": 7200
+    },
+    {
+      "date": "2026-09-29",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 27,
+      "revenue": 2160
+    },
+    {
+      "date": "2026-09-29",
+      "platform": "Instagram",
+      "reach": 43562,
+      "engagementRate": 12.1,
+      "clicks": 1839,
+      "conversions": 116,
+      "roas": 2.2,
+      "revenue": 5314
+    },
+    {
+      "date": "2026-09-29",
+      "platform": "TikTok",
+      "reach": 25051,
+      "engagementRate": 10.0,
+      "clicks": 1044,
+      "conversions": 67,
+      "roas": 1.8,
+      "revenue": 3917
+    },
+    {
+      "date": "2026-09-29",
+      "platform": "YouTube",
+      "reach": 17514,
+      "engagementRate": 1.9,
+      "clicks": 460,
+      "conversions": 35,
+      "roas": 1.9,
+      "revenue": 1176
+    },
+    {
+      "date": "2026-09-30",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 39,
+      "revenue": 1950
+    },
+    {
+      "date": "2026-09-30",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 25,
+      "revenue": 3000
+    },
+    {
+      "date": "2026-09-30",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 29,
+      "revenue": 2320
+    },
+    {
+      "date": "2026-09-30",
+      "platform": "Instagram",
+      "reach": 42334,
+      "engagementRate": 8.2,
+      "clicks": 2354,
+      "conversions": 81,
+      "roas": 4.2,
+      "revenue": 9082
+    },
+    {
+      "date": "2026-09-30",
+      "platform": "TikTok",
+      "reach": 23615,
+      "engagementRate": 9.1,
+      "clicks": 966,
+      "conversions": 73,
+      "roas": 2.4,
+      "revenue": 4007
+    },
+    {
+      "date": "2026-09-30",
+      "platform": "YouTube",
+      "reach": 19156,
+      "engagementRate": 6.3,
+      "clicks": 897,
+      "conversions": 34,
+      "roas": 2.9,
+      "revenue": 3817
+    },
+    {
+      "date": "2026-10-01",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 51,
+      "revenue": 2550
+    },
+    {
+      "date": "2026-10-01",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 45,
+      "revenue": 5400
+    },
+    {
+      "date": "2026-10-01",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 79,
+      "revenue": 6320
+    },
+    {
+      "date": "2026-10-01",
+      "platform": "Instagram",
+      "reach": 41938,
+      "engagementRate": 8.3,
+      "clicks": 1283,
+      "conversions": 97,
+      "roas": 5.5,
+      "revenue": 5950
+    },
+    {
+      "date": "2026-10-01",
+      "platform": "TikTok",
+      "reach": 30937,
+      "engagementRate": 7.5,
+      "clicks": 1650,
+      "conversions": 102,
+      "roas": 4.3,
+      "revenue": 8186
+    },
+    {
+      "date": "2026-10-01",
+      "platform": "YouTube",
+      "reach": 20941,
+      "engagementRate": 4.7,
+      "clicks": 1103,
+      "conversions": 41,
+      "roas": 4.5,
+      "revenue": 5312
+    },
+    {
+      "date": "2026-10-02",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 38,
+      "revenue": 1900
+    },
+    {
+      "date": "2026-10-02",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 43,
+      "revenue": 5160
+    },
+    {
+      "date": "2026-10-02",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 44,
+      "revenue": 3520
+    },
+    {
+      "date": "2026-10-02",
+      "platform": "Instagram",
+      "reach": 47064,
+      "engagementRate": 8.6,
+      "clicks": 1453,
+      "conversions": 81,
+      "roas": 4.7,
+      "revenue": 3793
+    },
+    {
+      "date": "2026-10-02",
+      "platform": "TikTok",
+      "reach": 26797,
+      "engagementRate": 7.2,
+      "clicks": 1059,
+      "conversions": 78,
+      "roas": 5.3,
+      "revenue": 2411
+    },
+    {
+      "date": "2026-10-02",
+      "platform": "YouTube",
+      "reach": 15230,
+      "engagementRate": 5.4,
+      "clicks": 306,
+      "conversions": 20,
+      "roas": 4.4,
+      "revenue": 852
+    },
+    {
+      "date": "2026-10-03",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 39,
+      "revenue": 1950
+    },
+    {
+      "date": "2026-10-03",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 24,
+      "revenue": 2880
+    },
+    {
+      "date": "2026-10-03",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 38,
+      "revenue": 3040
+    },
+    {
+      "date": "2026-10-03",
+      "platform": "Instagram",
+      "reach": 42405,
+      "engagementRate": 10.2,
+      "clicks": 2381,
+      "conversions": 125,
+      "roas": 5.3,
+      "revenue": 8922
+    },
+    {
+      "date": "2026-10-03",
+      "platform": "TikTok",
+      "reach": 34117,
+      "engagementRate": 8.6,
+      "clicks": 1103,
+      "conversions": 81,
+      "roas": 5.1,
+      "revenue": 5054
+    },
+    {
+      "date": "2026-10-03",
+      "platform": "YouTube",
+      "reach": 20893,
+      "engagementRate": 5.6,
+      "clicks": 626,
+      "conversions": 16,
+      "roas": 5.0,
+      "revenue": 2912
+    },
+    {
+      "date": "2026-10-04",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 35,
+      "revenue": 1750
+    },
+    {
+      "date": "2026-10-04",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 26,
+      "revenue": 3120
+    },
+    {
+      "date": "2026-10-04",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 49,
+      "revenue": 3920
+    },
+    {
+      "date": "2026-10-04",
+      "platform": "Instagram",
+      "reach": 48606,
+      "engagementRate": 10.3,
+      "clicks": 2653,
+      "conversions": 208,
+      "roas": 5.1,
+      "revenue": 12321
+    },
+    {
+      "date": "2026-10-04",
+      "platform": "TikTok",
+      "reach": 37468,
+      "engagementRate": 8.5,
+      "clicks": 1247,
+      "conversions": 94,
+      "roas": 5.1,
+      "revenue": 5726
+    },
+    {
+      "date": "2026-10-04",
+      "platform": "YouTube",
+      "reach": 20267,
+      "engagementRate": 3.7,
+      "clicks": 1043,
+      "conversions": 27,
+      "roas": 5.4,
+      "revenue": 4772
+    },
+    {
+      "date": "2026-10-05",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 43,
+      "revenue": 2150
+    },
+    {
+      "date": "2026-10-05",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 61,
+      "revenue": 7320
+    },
+    {
+      "date": "2026-10-05",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 30,
+      "revenue": 2400
+    },
+    {
+      "date": "2026-10-05",
+      "platform": "Instagram",
+      "reach": 43153,
+      "engagementRate": 7.7,
+      "clicks": 903,
+      "conversions": 28,
+      "roas": 3.0,
+      "revenue": 4147
+    },
+    {
+      "date": "2026-10-05",
+      "platform": "TikTok",
+      "reach": 25951,
+      "engagementRate": 9.3,
+      "clicks": 1184,
+      "conversions": 52,
+      "roas": 5.9,
+      "revenue": 4272
+    },
+    {
+      "date": "2026-10-05",
+      "platform": "YouTube",
+      "reach": 17964,
+      "engagementRate": 5.5,
+      "clicks": 1056,
+      "conversions": 32,
+      "roas": 5.8,
+      "revenue": 2952
+    },
+    {
+      "date": "2026-10-06",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 37,
+      "revenue": 1850
+    },
+    {
+      "date": "2026-10-06",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 49,
+      "revenue": 5880
+    },
+    {
+      "date": "2026-10-06",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 48,
+      "revenue": 3840
+    },
+    {
+      "date": "2026-10-06",
+      "platform": "Instagram",
+      "reach": 41516,
+      "engagementRate": 6.1,
+      "clicks": 1837,
+      "conversions": 93,
+      "roas": 3.2,
+      "revenue": 6851
+    },
+    {
+      "date": "2026-10-06",
+      "platform": "TikTok",
+      "reach": 29166,
+      "engagementRate": 10.5,
+      "clicks": 585,
+      "conversions": 44,
+      "roas": 3.9,
+      "revenue": 2432
+    },
+    {
+      "date": "2026-10-06",
+      "platform": "YouTube",
+      "reach": 18423,
+      "engagementRate": 2.6,
+      "clicks": 636,
+      "conversions": 15,
+      "roas": 4.5,
+      "revenue": 1902
+    },
+    {
+      "date": "2026-10-07",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 30,
+      "revenue": 1500
+    },
+    {
+      "date": "2026-10-07",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 61,
+      "revenue": 7320
+    },
+    {
+      "date": "2026-10-07",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 38,
+      "revenue": 3040
+    },
+    {
+      "date": "2026-10-07",
+      "platform": "Instagram",
+      "reach": 37950,
+      "engagementRate": 6.8,
+      "clicks": 1369,
+      "conversions": 51,
+      "roas": 2.1,
+      "revenue": 4464
+    },
+    {
+      "date": "2026-10-07",
+      "platform": "TikTok",
+      "reach": 34171,
+      "engagementRate": 10.2,
+      "clicks": 1917,
+      "conversions": 109,
+      "roas": 2.9,
+      "revenue": 6985
+    },
+    {
+      "date": "2026-10-07",
+      "platform": "YouTube",
+      "reach": 16047,
+      "engagementRate": 6.0,
+      "clicks": 596,
+      "conversions": 32,
+      "roas": 4.4,
+      "revenue": 2023
+    },
+    {
+      "date": "2026-10-08",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 40,
+      "revenue": 2000
+    },
+    {
+      "date": "2026-10-08",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 32,
+      "revenue": 3840
+    },
+    {
+      "date": "2026-10-08",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 42,
+      "revenue": 3360
+    },
+    {
+      "date": "2026-10-08",
+      "platform": "Instagram",
+      "reach": 31494,
+      "engagementRate": 7.9,
+      "clicks": 1632,
+      "conversions": 49,
+      "roas": 1.9,
+      "revenue": 5787
+    },
+    {
+      "date": "2026-10-08",
+      "platform": "TikTok",
+      "reach": 26368,
+      "engagementRate": 7.1,
+      "clicks": 1390,
+      "conversions": 90,
+      "roas": 4.5,
+      "revenue": 3716
+    },
+    {
+      "date": "2026-10-08",
+      "platform": "YouTube",
+      "reach": 19149,
+      "engagementRate": 5.1,
+      "clicks": 570,
+      "conversions": 27,
+      "roas": 5.3,
+      "revenue": 1264
+    },
+    {
+      "date": "2026-10-09",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 25,
+      "revenue": 1250
+    },
+    {
+      "date": "2026-10-09",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 48,
+      "revenue": 5760
+    },
+    {
+      "date": "2026-10-09",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 46,
+      "revenue": 3680
+    },
+    {
+      "date": "2026-10-09",
+      "platform": "Instagram",
+      "reach": 49354,
+      "engagementRate": 6.3,
+      "clicks": 2282,
+      "conversions": 46,
+      "roas": 4.9,
+      "revenue": 9835
+    },
+    {
+      "date": "2026-10-09",
+      "platform": "TikTok",
+      "reach": 29532,
+      "engagementRate": 9.3,
+      "clicks": 798,
+      "conversions": 61,
+      "roas": 3.8,
+      "revenue": 1716
+    },
+    {
+      "date": "2026-10-09",
+      "platform": "YouTube",
+      "reach": 22066,
+      "engagementRate": 4.8,
+      "clicks": 844,
+      "conversions": 57,
+      "roas": 4.5,
+      "revenue": 4189
+    },
+    {
+      "date": "2026-10-10",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 63,
+      "revenue": 3150
+    },
+    {
+      "date": "2026-10-10",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 15,
+      "revenue": 1800
+    },
+    {
+      "date": "2026-10-10",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 23,
+      "revenue": 1840
+    },
+    {
+      "date": "2026-10-10",
+      "platform": "Instagram",
+      "reach": 47445,
+      "engagementRate": 6.1,
+      "clicks": 2313,
+      "conversions": 116,
+      "roas": 5.2,
+      "revenue": 8427
+    },
+    {
+      "date": "2026-10-10",
+      "platform": "TikTok",
+      "reach": 35988,
+      "engagementRate": 6.6,
+      "clicks": 1403,
+      "conversions": 49,
+      "roas": 2.6,
+      "revenue": 5489
+    },
+    {
+      "date": "2026-10-10",
+      "platform": "YouTube",
+      "reach": 19402,
+      "engagementRate": 3.0,
+      "clicks": 874,
+      "conversions": 31,
+      "roas": 1.8,
+      "revenue": 2497
+    },
+    {
+      "date": "2026-10-11",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 38,
+      "revenue": 1900
+    },
+    {
+      "date": "2026-10-11",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 50,
+      "revenue": 6000
+    },
+    {
+      "date": "2026-10-11",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 33,
+      "revenue": 2640
+    },
+    {
+      "date": "2026-10-11",
+      "platform": "Instagram",
+      "reach": 41418,
+      "engagementRate": 7.7,
+      "clicks": 1998,
+      "conversions": 47,
+      "roas": 3.3,
+      "revenue": 7248
+    },
+    {
+      "date": "2026-10-11",
+      "platform": "TikTok",
+      "reach": 37040,
+      "engagementRate": 7.2,
+      "clicks": 1363,
+      "conversions": 101,
+      "roas": 4.1,
+      "revenue": 5569
+    },
+    {
+      "date": "2026-10-11",
+      "platform": "YouTube",
+      "reach": 20518,
+      "engagementRate": 6.4,
+      "clicks": 722,
+      "conversions": 14,
+      "roas": 3.1,
+      "revenue": 3076
+    },
+    {
+      "date": "2026-10-12",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 23,
+      "revenue": 1150
+    },
+    {
+      "date": "2026-10-12",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 57,
+      "revenue": 6840
+    },
+    {
+      "date": "2026-10-12",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 16,
+      "revenue": 1280
+    },
+    {
+      "date": "2026-10-12",
+      "platform": "Instagram",
+      "reach": 34855,
+      "engagementRate": 8.6,
+      "clicks": 1458,
+      "conversions": 81,
+      "roas": 2.5,
+      "revenue": 3875
+    },
+    {
+      "date": "2026-10-12",
+      "platform": "TikTok",
+      "reach": 28283,
+      "engagementRate": 8.2,
+      "clicks": 945,
+      "conversions": 57,
+      "roas": 3.3,
+      "revenue": 2357
+    },
+    {
+      "date": "2026-10-12",
+      "platform": "YouTube",
+      "reach": 16241,
+      "engagementRate": 5.0,
+      "clicks": 729,
+      "conversions": 15,
+      "roas": 3.3,
+      "revenue": 2692
+    },
+    {
+      "date": "2026-10-13",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 56,
+      "revenue": 2800
+    },
+    {
+      "date": "2026-10-13",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 42,
+      "revenue": 5040
+    },
+    {
+      "date": "2026-10-13",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 48,
+      "revenue": 3840
+    },
+    {
+      "date": "2026-10-13",
+      "platform": "Instagram",
+      "reach": 46290,
+      "engagementRate": 8.8,
+      "clicks": 1317,
+      "conversions": 52,
+      "roas": 4.9,
+      "revenue": 4131
+    },
+    {
+      "date": "2026-10-13",
+      "platform": "TikTok",
+      "reach": 30916,
+      "engagementRate": 8.1,
+      "clicks": 930,
+      "conversions": 23,
+      "roas": 1.6,
+      "revenue": 3364
+    },
+    {
+      "date": "2026-10-13",
+      "platform": "YouTube",
+      "reach": 9357,
+      "engagementRate": 6.2,
+      "clicks": 430,
+      "conversions": 28,
+      "roas": 4.4,
+      "revenue": 1832
+    },
+    {
+      "date": "2026-10-14",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 39,
+      "revenue": 1950
+    },
+    {
+      "date": "2026-10-14",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 47,
+      "revenue": 5640
+    },
+    {
+      "date": "2026-10-14",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 37,
+      "revenue": 2960
+    },
+    {
+      "date": "2026-10-14",
+      "platform": "Instagram",
+      "reach": 44951,
+      "engagementRate": 7.5,
+      "clicks": 1125,
+      "conversions": 67,
+      "roas": 4.0,
+      "revenue": 2985
+    },
+    {
+      "date": "2026-10-14",
+      "platform": "TikTok",
+      "reach": 26735,
+      "engagementRate": 5.7,
+      "clicks": 714,
+      "conversions": 40,
+      "roas": 4.9,
+      "revenue": 1673
+    },
+    {
+      "date": "2026-10-14",
+      "platform": "YouTube",
+      "reach": 24254,
+      "engagementRate": 1.3,
+      "clicks": 589,
+      "conversions": 12,
+      "roas": 2.9,
+      "revenue": 2374
+    },
+    {
+      "date": "2026-10-15",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 51,
+      "revenue": 2550
+    },
+    {
+      "date": "2026-10-15",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 36,
+      "revenue": 4320
+    },
+    {
+      "date": "2026-10-15",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 38,
+      "revenue": 3040
+    },
+    {
+      "date": "2026-10-15",
+      "platform": "Instagram",
+      "reach": 40159,
+      "engagementRate": 6.6,
+      "clicks": 966,
+      "conversions": 64,
+      "roas": 5.3,
+      "revenue": 3671
+    },
+    {
+      "date": "2026-10-15",
+      "platform": "TikTok",
+      "reach": 22859,
+      "engagementRate": 11.2,
+      "clicks": 1172,
+      "conversions": 47,
+      "roas": 3.4,
+      "revenue": 3646
+    },
+    {
+      "date": "2026-10-15",
+      "platform": "YouTube",
+      "reach": 28700,
+      "engagementRate": 3.4,
+      "clicks": 1549,
+      "conversions": 107,
+      "roas": 2.0,
+      "revenue": 7562
+    },
+    {
+      "date": "2026-10-16",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 39,
+      "revenue": 1950
+    },
+    {
+      "date": "2026-10-16",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 25,
+      "revenue": 3000
+    },
+    {
+      "date": "2026-10-16",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 23,
+      "revenue": 1840
+    },
+    {
+      "date": "2026-10-16",
+      "platform": "Instagram",
+      "reach": 40682,
+      "engagementRate": 5.9,
+      "clicks": 2007,
+      "conversions": 156,
+      "roas": 2.7,
+      "revenue": 8880
+    },
+    {
+      "date": "2026-10-16",
+      "platform": "TikTok",
+      "reach": 23817,
+      "engagementRate": 7.7,
+      "clicks": 891,
+      "conversions": 56,
+      "roas": 2.7,
+      "revenue": 4058
+    },
+    {
+      "date": "2026-10-16",
+      "platform": "YouTube",
+      "reach": 19834,
+      "engagementRate": 4.2,
+      "clicks": 1096,
+      "conversions": 37,
+      "roas": 3.6,
+      "revenue": 4198
+    },
+    {
+      "date": "2026-10-17",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 37,
+      "revenue": 1850
+    },
+    {
+      "date": "2026-10-17",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 41,
+      "revenue": 4920
+    },
+    {
+      "date": "2026-10-17",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 44,
+      "revenue": 3520
+    },
+    {
+      "date": "2026-10-17",
+      "platform": "Instagram",
+      "reach": 39548,
+      "engagementRate": 8.0,
+      "clicks": 1329,
+      "conversions": 96,
+      "roas": 4.7,
+      "revenue": 3759
+    },
+    {
+      "date": "2026-10-17",
+      "platform": "TikTok",
+      "reach": 38088,
+      "engagementRate": 11.7,
+      "clicks": 892,
+      "conversions": 56,
+      "roas": 3.7,
+      "revenue": 3812
+    },
+    {
+      "date": "2026-10-17",
+      "platform": "YouTube",
+      "reach": 19575,
+      "engagementRate": 4.0,
+      "clicks": 775,
+      "conversions": 52,
+      "roas": 1.9,
+      "revenue": 2065
+    },
+    {
+      "date": "2026-10-18",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 23,
+      "revenue": 1150
+    },
+    {
+      "date": "2026-10-18",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 36,
+      "revenue": 4320
+    },
+    {
+      "date": "2026-10-18",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 30,
+      "revenue": 2400
+    },
+    {
+      "date": "2026-10-18",
+      "platform": "Instagram",
+      "reach": 37165,
+      "engagementRate": 6.6,
+      "clicks": 1532,
+      "conversions": 69,
+      "roas": 4.9,
+      "revenue": 4584
+    },
+    {
+      "date": "2026-10-18",
+      "platform": "TikTok",
+      "reach": 28239,
+      "engagementRate": 7.0,
+      "clicks": 848,
+      "conversions": 23,
+      "roas": 2.4,
+      "revenue": 2000
+    },
+    {
+      "date": "2026-10-18",
+      "platform": "YouTube",
+      "reach": 10539,
+      "engagementRate": 4.2,
+      "clicks": 288,
+      "conversions": 9,
+      "roas": 3.7,
+      "revenue": 1202
+    },
+    {
+      "date": "2026-10-19",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 54,
+      "revenue": 2700
+    },
+    {
+      "date": "2026-10-19",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 37,
+      "revenue": 4440
+    },
+    {
+      "date": "2026-10-19",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 38,
+      "revenue": 3040
+    },
+    {
+      "date": "2026-10-19",
+      "platform": "Instagram",
+      "reach": 44352,
+      "engagementRate": 7.8,
+      "clicks": 1205,
+      "conversions": 25,
+      "roas": 3.9,
+      "revenue": 3401
+    },
+    {
+      "date": "2026-10-19",
+      "platform": "TikTok",
+      "reach": 32773,
+      "engagementRate": 10.0,
+      "clicks": 1569,
+      "conversions": 43,
+      "roas": 5.4,
+      "revenue": 5448
+    },
+    {
+      "date": "2026-10-19",
+      "platform": "YouTube",
+      "reach": 17779,
+      "engagementRate": 6.2,
+      "clicks": 689,
+      "conversions": 31,
+      "roas": 2.3,
+      "revenue": 1484
+    },
+    {
+      "date": "2026-10-20",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 28,
+      "revenue": 1400
+    },
+    {
+      "date": "2026-10-20",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 52,
+      "revenue": 6240
+    },
+    {
+      "date": "2026-10-20",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 35,
+      "revenue": 2800
+    },
+    {
+      "date": "2026-10-20",
+      "platform": "Instagram",
+      "reach": 44314,
+      "engagementRate": 6.0,
+      "clicks": 1017,
+      "conversions": 58,
+      "roas": 1.7,
+      "revenue": 2489
+    },
+    {
+      "date": "2026-10-20",
+      "platform": "TikTok",
+      "reach": 25472,
+      "engagementRate": 7.6,
+      "clicks": 1522,
+      "conversions": 41,
+      "roas": 4.9,
+      "revenue": 5812
+    },
+    {
+      "date": "2026-10-20",
+      "platform": "YouTube",
+      "reach": 19705,
+      "engagementRate": 3.8,
+      "clicks": 805,
+      "conversions": 37,
+      "roas": 3.5,
+      "revenue": 3687
+    },
+    {
+      "date": "2026-10-21",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 50,
+      "revenue": 2500
+    },
+    {
+      "date": "2026-10-21",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 39,
+      "revenue": 4680
+    },
+    {
+      "date": "2026-10-21",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 28,
+      "revenue": 2240
+    },
+    {
+      "date": "2026-10-21",
+      "platform": "Instagram",
+      "reach": 37373,
+      "engagementRate": 7.2,
+      "clicks": 1058,
+      "conversions": 34,
+      "roas": 4.5,
+      "revenue": 2614
+    },
+    {
+      "date": "2026-10-21",
+      "platform": "TikTok",
+      "reach": 17281,
+      "engagementRate": 8.4,
+      "clicks": 347,
+      "conversions": 16,
+      "roas": 4.2,
+      "revenue": 997
+    },
+    {
+      "date": "2026-10-21",
+      "platform": "YouTube",
+      "reach": 20553,
+      "engagementRate": 5.1,
+      "clicks": 989,
+      "conversions": 46,
+      "roas": 4.6,
+      "revenue": 4719
+    },
+    {
+      "date": "2026-10-22",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 58,
+      "revenue": 2900
+    },
+    {
+      "date": "2026-10-22",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 43,
+      "revenue": 5160
+    },
+    {
+      "date": "2026-10-22",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 23,
+      "revenue": 1840
+    },
+    {
+      "date": "2026-10-22",
+      "platform": "Instagram",
+      "reach": 35932,
+      "engagementRate": 4.4,
+      "clicks": 1329,
+      "conversions": 70,
+      "roas": 4.4,
+      "revenue": 6279
+    },
+    {
+      "date": "2026-10-22",
+      "platform": "TikTok",
+      "reach": 30291,
+      "engagementRate": 7.6,
+      "clicks": 806,
+      "conversions": 30,
+      "roas": 4.9,
+      "revenue": 2988
+    },
+    {
+      "date": "2026-10-22",
+      "platform": "YouTube",
+      "reach": 18181,
+      "engagementRate": 5.6,
+      "clicks": 864,
+      "conversions": 53,
+      "roas": 5.7,
+      "revenue": 3025
+    },
+    {
+      "date": "2026-10-23",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 35,
+      "revenue": 1750
+    },
+    {
+      "date": "2026-10-23",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 40,
+      "revenue": 4800
+    },
+    {
+      "date": "2026-10-23",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 52,
+      "revenue": 4160
+    },
+    {
+      "date": "2026-10-23",
+      "platform": "Instagram",
+      "reach": 43418,
+      "engagementRate": 6.9,
+      "clicks": 1026,
+      "conversions": 79,
+      "roas": 5.3,
+      "revenue": 3822
+    },
+    {
+      "date": "2026-10-23",
+      "platform": "TikTok",
+      "reach": 32810,
+      "engagementRate": 13.7,
+      "clicks": 1538,
+      "conversions": 55,
+      "roas": 1.7,
+      "revenue": 6565
+    },
+    {
+      "date": "2026-10-23",
+      "platform": "YouTube",
+      "reach": 12806,
+      "engagementRate": 2.7,
+      "clicks": 725,
+      "conversions": 22,
+      "roas": 4.1,
+      "revenue": 2830
+    },
+    {
+      "date": "2026-10-24",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 43,
+      "revenue": 2150
+    },
+    {
+      "date": "2026-10-24",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 34,
+      "revenue": 4080
+    },
+    {
+      "date": "2026-10-24",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 40,
+      "revenue": 3200
+    },
+    {
+      "date": "2026-10-24",
+      "platform": "Instagram",
+      "reach": 39500,
+      "engagementRate": 8.5,
+      "clicks": 1848,
+      "conversions": 132,
+      "roas": 3.0,
+      "revenue": 7541
+    },
+    {
+      "date": "2026-10-24",
+      "platform": "TikTok",
+      "reach": 26534,
+      "engagementRate": 11.6,
+      "clicks": 1394,
+      "conversions": 73,
+      "roas": 3.5,
+      "revenue": 4103
+    },
+    {
+      "date": "2026-10-24",
+      "platform": "YouTube",
+      "reach": 12911,
+      "engagementRate": 8.4,
+      "clicks": 466,
+      "conversions": 23,
+      "roas": 5.9,
+      "revenue": 1851
+    },
+    {
+      "date": "2026-10-25",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 28,
+      "revenue": 1400
+    },
+    {
+      "date": "2026-10-25",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 36,
+      "revenue": 4320
+    },
+    {
+      "date": "2026-10-25",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 44,
+      "revenue": 3520
+    },
+    {
+      "date": "2026-10-25",
+      "platform": "Instagram",
+      "reach": 46478,
+      "engagementRate": 7.5,
+      "clicks": 2342,
+      "conversions": 75,
+      "roas": 4.0,
+      "revenue": 11201
+    },
+    {
+      "date": "2026-10-25",
+      "platform": "TikTok",
+      "reach": 22398,
+      "engagementRate": 6.0,
+      "clicks": 556,
+      "conversions": 43,
+      "roas": 4.2,
+      "revenue": 1511
+    },
+    {
+      "date": "2026-10-25",
+      "platform": "YouTube",
+      "reach": 21734,
+      "engagementRate": 5.8,
+      "clicks": 914,
+      "conversions": 23,
+      "roas": 6.0,
+      "revenue": 4331
+    },
+    {
+      "date": "2026-10-26",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 52,
+      "revenue": 2600
+    },
+    {
+      "date": "2026-10-26",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 34,
+      "revenue": 4080
+    },
+    {
+      "date": "2026-10-26",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 41,
+      "revenue": 3280
+    },
+    {
+      "date": "2026-10-26",
+      "platform": "Instagram",
+      "reach": 44998,
+      "engagementRate": 5.9,
+      "clicks": 2189,
+      "conversions": 110,
+      "roas": 2.7,
+      "revenue": 9859
+    },
+    {
+      "date": "2026-10-26",
+      "platform": "TikTok",
+      "reach": 33108,
+      "engagementRate": 8.0,
+      "clicks": 1392,
+      "conversions": 59,
+      "roas": 5.6,
+      "revenue": 4906
+    },
+    {
+      "date": "2026-10-26",
+      "platform": "YouTube",
+      "reach": 26052,
+      "engagementRate": 2.7,
+      "clicks": 808,
+      "conversions": 54,
+      "roas": 3.4,
+      "revenue": 3880
+    },
+    {
+      "date": "2026-10-27",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 17,
+      "revenue": 850
+    },
+    {
+      "date": "2026-10-27",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 38,
+      "revenue": 4560
+    },
+    {
+      "date": "2026-10-27",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 37,
+      "revenue": 2960
+    },
+    {
+      "date": "2026-10-27",
+      "platform": "Instagram",
+      "reach": 46221,
+      "engagementRate": 2.7,
+      "clicks": 1829,
+      "conversions": 52,
+      "roas": 3.9,
+      "revenue": 5551
+    },
+    {
+      "date": "2026-10-27",
+      "platform": "TikTok",
+      "reach": 19810,
+      "engagementRate": 6.3,
+      "clicks": 757,
+      "conversions": 29,
+      "roas": 2.3,
+      "revenue": 3098
+    },
+    {
+      "date": "2026-10-27",
+      "platform": "YouTube",
+      "reach": 16793,
+      "engagementRate": 3.8,
+      "clicks": 856,
+      "conversions": 19,
+      "roas": 4.9,
+      "revenue": 3523
+    },
+    {
+      "date": "2026-10-28",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 36,
+      "revenue": 1800
+    },
+    {
+      "date": "2026-10-28",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 44,
+      "revenue": 5280
+    },
+    {
+      "date": "2026-10-28",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 29,
+      "revenue": 2320
+    },
+    {
+      "date": "2026-10-28",
+      "platform": "Instagram",
+      "reach": 37315,
+      "engagementRate": 5.0,
+      "clicks": 2210,
+      "conversions": 109,
+      "roas": 1.7,
+      "revenue": 7750
+    },
+    {
+      "date": "2026-10-28",
+      "platform": "TikTok",
+      "reach": 20883,
+      "engagementRate": 6.5,
+      "clicks": 1147,
+      "conversions": 53,
+      "roas": 3.9,
+      "revenue": 3866
+    },
+    {
+      "date": "2026-10-28",
+      "platform": "YouTube",
+      "reach": 17915,
+      "engagementRate": 3.3,
+      "clicks": 827,
+      "conversions": 24,
+      "roas": 3.6,
+      "revenue": 4058
+    },
+    {
+      "date": "2026-10-29",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 30,
+      "revenue": 1500
+    },
+    {
+      "date": "2026-10-29",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 55,
+      "revenue": 6600
+    },
+    {
+      "date": "2026-10-29",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 26,
+      "revenue": 2080
+    },
+    {
+      "date": "2026-10-29",
+      "platform": "Instagram",
+      "reach": 34202,
+      "engagementRate": 9.2,
+      "clicks": 1203,
+      "conversions": 46,
+      "roas": 4.7,
+      "revenue": 5146
+    },
+    {
+      "date": "2026-10-29",
+      "platform": "TikTok",
+      "reach": 21474,
+      "engagementRate": 8.4,
+      "clicks": 488,
+      "conversions": 28,
+      "roas": 5.6,
+      "revenue": 2436
+    },
+    {
+      "date": "2026-10-29",
+      "platform": "YouTube",
+      "reach": 17828,
+      "engagementRate": 4.8,
+      "clicks": 426,
+      "conversions": 24,
+      "roas": 5.4,
+      "revenue": 1419
+    },
+    {
+      "date": "2026-10-30",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 27,
+      "revenue": 1350
+    },
+    {
+      "date": "2026-10-30",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 31,
+      "revenue": 3720
+    },
+    {
+      "date": "2026-10-30",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 15,
+      "revenue": 1200
+    },
+    {
+      "date": "2026-10-30",
+      "platform": "Instagram",
+      "reach": 50647,
+      "engagementRate": 8.2,
+      "clicks": 1607,
+      "conversions": 68,
+      "roas": 2.2,
+      "revenue": 5774
+    },
+    {
+      "date": "2026-10-30",
+      "platform": "TikTok",
+      "reach": 21282,
+      "engagementRate": 7.0,
+      "clicks": 570,
+      "conversions": 14,
+      "roas": 5.4,
+      "revenue": 2199
+    },
+    {
+      "date": "2026-10-30",
+      "platform": "YouTube",
+      "reach": 19436,
+      "engagementRate": 8.1,
+      "clicks": 499,
+      "conversions": 23,
+      "roas": 2.6,
+      "revenue": 1380
+    },
+    {
+      "date": "2026-10-31",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 61,
+      "revenue": 3050
+    },
+    {
+      "date": "2026-10-31",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 41,
+      "revenue": 4920
+    },
+    {
+      "date": "2026-10-31",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 54,
+      "revenue": 4320
+    },
+    {
+      "date": "2026-10-31",
+      "platform": "Instagram",
+      "reach": 37724,
+      "engagementRate": 8.3,
+      "clicks": 1275,
+      "conversions": 70,
+      "roas": 4.4,
+      "revenue": 4172
+    },
+    {
+      "date": "2026-10-31",
+      "platform": "TikTok",
+      "reach": 33921,
+      "engagementRate": 8.1,
+      "clicks": 948,
+      "conversions": 40,
+      "roas": 3.7,
+      "revenue": 2570
+    },
+    {
+      "date": "2026-10-31",
+      "platform": "YouTube",
+      "reach": 28459,
+      "engagementRate": 3.0,
+      "clicks": 1699,
+      "conversions": 64,
+      "roas": 5.9,
+      "revenue": 6752
+    },
+    {
+      "date": "2026-11-01",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 33,
+      "revenue": 1650
+    },
+    {
+      "date": "2026-11-01",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 37,
+      "revenue": 4440
+    },
+    {
+      "date": "2026-11-01",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 55,
+      "revenue": 4400
+    },
+    {
+      "date": "2026-11-01",
+      "platform": "Instagram",
+      "reach": 38856,
+      "engagementRate": 5.1,
+      "clicks": 853,
+      "conversions": 48,
+      "roas": 3.7,
+      "revenue": 4019
+    },
+    {
+      "date": "2026-11-01",
+      "platform": "TikTok",
+      "reach": 27381,
+      "engagementRate": 10.7,
+      "clicks": 1212,
+      "conversions": 49,
+      "roas": 4.4,
+      "revenue": 4681
+    },
+    {
+      "date": "2026-11-01",
+      "platform": "YouTube",
+      "reach": 15297,
+      "engagementRate": 2.6,
+      "clicks": 709,
+      "conversions": 49,
+      "roas": 4.3,
+      "revenue": 3339
+    },
+    {
+      "date": "2026-11-02",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 33,
+      "revenue": 1650
+    },
+    {
+      "date": "2026-11-02",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 31,
+      "revenue": 3720
+    },
+    {
+      "date": "2026-11-02",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 25,
+      "revenue": 2000
+    },
+    {
+      "date": "2026-11-02",
+      "platform": "Instagram",
+      "reach": 44491,
+      "engagementRate": 7.3,
+      "clicks": 1415,
+      "conversions": 91,
+      "roas": 2.3,
+      "revenue": 3391
+    },
+    {
+      "date": "2026-11-02",
+      "platform": "TikTok",
+      "reach": 27240,
+      "engagementRate": 4.2,
+      "clicks": 1123,
+      "conversions": 84,
+      "roas": 5.2,
+      "revenue": 3111
+    },
+    {
+      "date": "2026-11-02",
+      "platform": "YouTube",
+      "reach": 15531,
+      "engagementRate": 5.6,
+      "clicks": 811,
+      "conversions": 52,
+      "roas": 3.0,
+      "revenue": 1902
+    },
+    {
+      "date": "2026-11-03",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 27,
+      "revenue": 1350
+    },
+    {
+      "date": "2026-11-03",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 46,
+      "revenue": 5520
+    },
+    {
+      "date": "2026-11-03",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 38,
+      "revenue": 3040
+    },
+    {
+      "date": "2026-11-03",
+      "platform": "Instagram",
+      "reach": 51798,
+      "engagementRate": 6.8,
+      "clicks": 2536,
+      "conversions": 199,
+      "roas": 5.9,
+      "revenue": 11193
+    },
+    {
+      "date": "2026-11-03",
+      "platform": "TikTok",
+      "reach": 23519,
+      "engagementRate": 10.1,
+      "clicks": 483,
+      "conversions": 25,
+      "roas": 3.5,
+      "revenue": 1940
+    },
+    {
+      "date": "2026-11-03",
+      "platform": "YouTube",
+      "reach": 15693,
+      "engagementRate": 3.0,
+      "clicks": 830,
+      "conversions": 63,
+      "roas": 2.0,
+      "revenue": 2242
+    },
+    {
+      "date": "2026-11-04",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 64,
+      "revenue": 3200
+    },
+    {
+      "date": "2026-11-04",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 43,
+      "revenue": 5160
+    },
+    {
+      "date": "2026-11-04",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 15,
+      "revenue": 1200
+    },
+    {
+      "date": "2026-11-04",
+      "platform": "Instagram",
+      "reach": 37919,
+      "engagementRate": 7.5,
+      "clicks": 2007,
+      "conversions": 149,
+      "roas": 2.9,
+      "revenue": 6472
+    },
+    {
+      "date": "2026-11-04",
+      "platform": "TikTok",
+      "reach": 31177,
+      "engagementRate": 10.4,
+      "clicks": 1003,
+      "conversions": 49,
+      "roas": 1.9,
+      "revenue": 4675
+    },
+    {
+      "date": "2026-11-04",
+      "platform": "YouTube",
+      "reach": 28105,
+      "engagementRate": 5.9,
+      "clicks": 1315,
+      "conversions": 84,
+      "roas": 5.8,
+      "revenue": 4283
+    },
+    {
+      "date": "2026-11-05",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 49,
+      "revenue": 2450
+    },
+    {
+      "date": "2026-11-05",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 39,
+      "revenue": 4680
+    },
+    {
+      "date": "2026-11-05",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 33,
+      "revenue": 2640
+    },
+    {
+      "date": "2026-11-05",
+      "platform": "Instagram",
+      "reach": 40135,
+      "engagementRate": 7.7,
+      "clicks": 1588,
+      "conversions": 70,
+      "roas": 5.8,
+      "revenue": 3331
+    },
+    {
+      "date": "2026-11-05",
+      "platform": "TikTok",
+      "reach": 25681,
+      "engagementRate": 9.3,
+      "clicks": 1490,
+      "conversions": 106,
+      "roas": 1.9,
+      "revenue": 6044
+    },
+    {
+      "date": "2026-11-05",
+      "platform": "YouTube",
+      "reach": 5533,
+      "engagementRate": 3.7,
+      "clicks": 190,
+      "conversions": 8,
+      "roas": 2.4,
+      "revenue": 449
+    },
+    {
+      "date": "2026-11-06",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 47,
+      "revenue": 2350
+    },
+    {
+      "date": "2026-11-06",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 29,
+      "revenue": 3480
+    },
+    {
+      "date": "2026-11-06",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 31,
+      "revenue": 2480
+    },
+    {
+      "date": "2026-11-06",
+      "platform": "Instagram",
+      "reach": 35985,
+      "engagementRate": 7.1,
+      "clicks": 1852,
+      "conversions": 64,
+      "roas": 2.1,
+      "revenue": 6840
+    },
+    {
+      "date": "2026-11-06",
+      "platform": "TikTok",
+      "reach": 28804,
+      "engagementRate": 10.4,
+      "clicks": 814,
+      "conversions": 26,
+      "roas": 5.4,
+      "revenue": 2430
+    },
+    {
+      "date": "2026-11-06",
+      "platform": "YouTube",
+      "reach": 22356,
+      "engagementRate": 6.7,
+      "clicks": 449,
+      "conversions": 32,
+      "roas": 2.2,
+      "revenue": 1073
+    },
+    {
+      "date": "2026-11-07",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 60,
+      "revenue": 3000
+    },
+    {
+      "date": "2026-11-07",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 39,
+      "revenue": 4680
+    },
+    {
+      "date": "2026-11-07",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 47,
+      "revenue": 3760
+    },
+    {
+      "date": "2026-11-07",
+      "platform": "Instagram",
+      "reach": 41494,
+      "engagementRate": 7.1,
+      "clicks": 854,
+      "conversions": 57,
+      "roas": 2.6,
+      "revenue": 2537
+    },
+    {
+      "date": "2026-11-07",
+      "platform": "TikTok",
+      "reach": 30151,
+      "engagementRate": 8.5,
+      "clicks": 1497,
+      "conversions": 77,
+      "roas": 4.9,
+      "revenue": 5132
+    },
+    {
+      "date": "2026-11-07",
+      "platform": "YouTube",
+      "reach": 19850,
+      "engagementRate": 3.0,
+      "clicks": 483,
+      "conversions": 24,
+      "roas": 5.8,
+      "revenue": 1028
+    },
+    {
+      "date": "2026-11-08",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 44,
+      "revenue": 2200
+    },
+    {
+      "date": "2026-11-08",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 16,
+      "revenue": 1920
+    },
+    {
+      "date": "2026-11-08",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 26,
+      "revenue": 2080
+    },
+    {
+      "date": "2026-11-08",
+      "platform": "Instagram",
+      "reach": 41356,
+      "engagementRate": 7.9,
+      "clicks": 1619,
+      "conversions": 71,
+      "roas": 4.6,
+      "revenue": 5619
+    },
+    {
+      "date": "2026-11-08",
+      "platform": "TikTok",
+      "reach": 29003,
+      "engagementRate": 8.6,
+      "clicks": 673,
+      "conversions": 38,
+      "roas": 1.8,
+      "revenue": 1901
+    },
+    {
+      "date": "2026-11-08",
+      "platform": "YouTube",
+      "reach": 17750,
+      "engagementRate": 3.5,
+      "clicks": 585,
+      "conversions": 46,
+      "roas": 3.9,
+      "revenue": 1966
+    },
+    {
+      "date": "2026-11-09",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 28,
+      "revenue": 1400
+    },
+    {
+      "date": "2026-11-09",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 35,
+      "revenue": 4200
+    },
+    {
+      "date": "2026-11-09",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 36,
+      "revenue": 2880
+    },
+    {
+      "date": "2026-11-09",
+      "platform": "Instagram",
+      "reach": 39179,
+      "engagementRate": 4.6,
+      "clicks": 1803,
+      "conversions": 119,
+      "roas": 4.7,
+      "revenue": 4769
+    },
+    {
+      "date": "2026-11-09",
+      "platform": "TikTok",
+      "reach": 25964,
+      "engagementRate": 8.4,
+      "clicks": 871,
+      "conversions": 41,
+      "roas": 3.4,
+      "revenue": 1990
+    },
+    {
+      "date": "2026-11-09",
+      "platform": "YouTube",
+      "reach": 12173,
+      "engagementRate": 5.8,
+      "clicks": 425,
+      "conversions": 12,
+      "roas": 5.7,
+      "revenue": 935
+    },
+    {
+      "date": "2026-11-10",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 42,
+      "revenue": 2100
+    },
+    {
+      "date": "2026-11-10",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 35,
+      "revenue": 4200
+    },
+    {
+      "date": "2026-11-10",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 56,
+      "revenue": 4480
+    },
+    {
+      "date": "2026-11-10",
+      "platform": "Instagram",
+      "reach": 46771,
+      "engagementRate": 8.1,
+      "clicks": 2032,
+      "conversions": 109,
+      "roas": 3.0,
+      "revenue": 4809
+    },
+    {
+      "date": "2026-11-10",
+      "platform": "TikTok",
+      "reach": 23499,
+      "engagementRate": 6.8,
+      "clicks": 1175,
+      "conversions": 84,
+      "roas": 4.7,
+      "revenue": 5763
+    },
+    {
+      "date": "2026-11-10",
+      "platform": "YouTube",
+      "reach": 24685,
+      "engagementRate": 3.7,
+      "clicks": 1064,
+      "conversions": 34,
+      "roas": 4.5,
+      "revenue": 2843
+    },
+    {
+      "date": "2026-11-11",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 33,
+      "revenue": 1650
+    },
+    {
+      "date": "2026-11-11",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 58,
+      "revenue": 6960
+    },
+    {
+      "date": "2026-11-11",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 54,
+      "revenue": 4320
+    },
+    {
+      "date": "2026-11-11",
+      "platform": "Instagram",
+      "reach": 36390,
+      "engagementRate": 9.3,
+      "clicks": 1563,
+      "conversions": 106,
+      "roas": 5.3,
+      "revenue": 7695
+    },
+    {
+      "date": "2026-11-11",
+      "platform": "TikTok",
+      "reach": 32273,
+      "engagementRate": 6.2,
+      "clicks": 1475,
+      "conversions": 31,
+      "roas": 5.7,
+      "revenue": 6620
+    },
+    {
+      "date": "2026-11-11",
+      "platform": "YouTube",
+      "reach": 18454,
+      "engagementRate": 5.7,
+      "clicks": 887,
+      "conversions": 34,
+      "roas": 3.0,
+      "revenue": 1790
+    },
+    {
+      "date": "2026-11-12",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 50,
+      "revenue": 2500
+    },
+    {
+      "date": "2026-11-12",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 28,
+      "revenue": 3360
+    },
+    {
+      "date": "2026-11-12",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 34,
+      "revenue": 2720
+    },
+    {
+      "date": "2026-11-12",
+      "platform": "Instagram",
+      "reach": 43714,
+      "engagementRate": 7.1,
+      "clicks": 2178,
+      "conversions": 71,
+      "roas": 3.4,
+      "revenue": 6583
+    },
+    {
+      "date": "2026-11-12",
+      "platform": "TikTok",
+      "reach": 28473,
+      "engagementRate": 6.5,
+      "clicks": 1454,
+      "conversions": 78,
+      "roas": 1.9,
+      "revenue": 3137
+    },
+    {
+      "date": "2026-11-12",
+      "platform": "YouTube",
+      "reach": 24626,
+      "engagementRate": 5.9,
+      "clicks": 1156,
+      "conversions": 41,
+      "roas": 4.5,
+      "revenue": 3996
+    },
+    {
+      "date": "2026-11-13",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 53,
+      "revenue": 2650
+    },
+    {
+      "date": "2026-11-13",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 31,
+      "revenue": 3720
+    },
+    {
+      "date": "2026-11-13",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 43,
+      "revenue": 3440
+    },
+    {
+      "date": "2026-11-13",
+      "platform": "Instagram",
+      "reach": 42176,
+      "engagementRate": 6.7,
+      "clicks": 1568,
+      "conversions": 58,
+      "roas": 4.6,
+      "revenue": 5425
+    },
+    {
+      "date": "2026-11-13",
+      "platform": "TikTok",
+      "reach": 28641,
+      "engagementRate": 7.7,
+      "clicks": 1025,
+      "conversions": 57,
+      "roas": 1.5,
+      "revenue": 2976
+    },
+    {
+      "date": "2026-11-13",
+      "platform": "YouTube",
+      "reach": 19455,
+      "engagementRate": 5.6,
+      "clicks": 587,
+      "conversions": 23,
+      "roas": 1.5,
+      "revenue": 2489
+    },
+    {
+      "date": "2026-11-14",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 45,
+      "revenue": 2250
+    },
+    {
+      "date": "2026-11-14",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 50,
+      "revenue": 6000
+    },
+    {
+      "date": "2026-11-14",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 35,
+      "revenue": 2800
+    },
+    {
+      "date": "2026-11-14",
+      "platform": "Instagram",
+      "reach": 36458,
+      "engagementRate": 8.8,
+      "clicks": 834,
+      "conversions": 59,
+      "roas": 1.7,
+      "revenue": 1714
+    },
+    {
+      "date": "2026-11-14",
+      "platform": "TikTok",
+      "reach": 21556,
+      "engagementRate": 10.7,
+      "clicks": 927,
+      "conversions": 50,
+      "roas": 4.7,
+      "revenue": 3015
+    },
+    {
+      "date": "2026-11-14",
+      "platform": "YouTube",
+      "reach": 14068,
+      "engagementRate": 5.0,
+      "clicks": 464,
+      "conversions": 31,
+      "roas": 4.3,
+      "revenue": 2086
+    },
+    {
+      "date": "2026-11-15",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 41,
+      "revenue": 2050
+    },
+    {
+      "date": "2026-11-15",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 44,
+      "revenue": 5280
+    },
+    {
+      "date": "2026-11-15",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 37,
+      "revenue": 2960
+    },
+    {
+      "date": "2026-11-15",
+      "platform": "Instagram",
+      "reach": 44188,
+      "engagementRate": 6.5,
+      "clicks": 1924,
+      "conversions": 98,
+      "roas": 3.3,
+      "revenue": 5638
+    },
+    {
+      "date": "2026-11-15",
+      "platform": "TikTok",
+      "reach": 27000,
+      "engagementRate": 9.2,
+      "clicks": 721,
+      "conversions": 36,
+      "roas": 2.0,
+      "revenue": 2545
+    },
+    {
+      "date": "2026-11-15",
+      "platform": "YouTube",
+      "reach": 22649,
+      "engagementRate": 4.0,
+      "clicks": 1111,
+      "conversions": 76,
+      "roas": 5.2,
+      "revenue": 3009
+    },
+    {
+      "date": "2026-11-16",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 44,
+      "revenue": 2200
+    },
+    {
+      "date": "2026-11-16",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 46,
+      "revenue": 5520
+    },
+    {
+      "date": "2026-11-16",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 23,
+      "revenue": 1840
+    },
+    {
+      "date": "2026-11-16",
+      "platform": "Instagram",
+      "reach": 37030,
+      "engagementRate": 6.9,
+      "clicks": 1885,
+      "conversions": 93,
+      "roas": 4.9,
+      "revenue": 8067
+    },
+    {
+      "date": "2026-11-16",
+      "platform": "TikTok",
+      "reach": 26811,
+      "engagementRate": 4.9,
+      "clicks": 1141,
+      "conversions": 66,
+      "roas": 4.3,
+      "revenue": 5240
+    },
+    {
+      "date": "2026-11-16",
+      "platform": "YouTube",
+      "reach": 22383,
+      "engagementRate": 4.2,
+      "clicks": 508,
+      "conversions": 23,
+      "roas": 2.9,
+      "revenue": 1434
+    },
+    {
+      "date": "2026-11-17",
+      "product": "Product A",
+      "platform": "Instagram",
+      "price": 50,
+      "units": 35,
+      "revenue": 1750
+    },
+    {
+      "date": "2026-11-17",
+      "product": "Product B",
+      "platform": "TikTok",
+      "price": 120,
+      "units": 53,
+      "revenue": 6360
+    },
+    {
+      "date": "2026-11-17",
+      "product": "Product C",
+      "platform": "YouTube",
+      "price": 80,
+      "units": 44,
+      "revenue": 3520
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "Instagram",
+      "reach": 40068,
+      "engagementRate": 8.9,
+      "clicks": 892,
+      "conversions": 62,
+      "roas": 1.8,
+      "revenue": 4096
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "TikTok",
+      "reach": 33644,
+      "engagementRate": 6.5,
+      "clicks": 1355,
+      "conversions": 64,
+      "roas": 4.0,
+      "revenue": 5928
+    },
+    {
+      "date": "2026-11-17",
+      "platform": "YouTube",
+      "reach": 23136,
+      "engagementRate": 3.8,
+      "clicks": 1212,
+      "conversions": 71,
+      "roas": 2.9,
+      "revenue": 4153
+    }
+  ],
+  "alerts": [
+    {
+      "tone": "warning",
+      "message": "Instagram conversion dipped 11% compared to last week."
+    },
+    {
+      "tone": "success",
+      "message": "Product B generated the highest average order value."
+    },
+    {
+      "tone": "info",
+      "message": "TikTok continues to deliver the strongest engagement rate."
+    }
+  ]
+}
