@@ -1,5 +1,20 @@
 # Stage 3 — Targeted Skill-Driven Improvements
 
+## Quick summary
+
+| Concern | Status |
+|---|---|
+| **Skill discovery** | Both `npx skills find` explorations recorded below with exact commands and output |
+| **Extra skill applied** | `vercel-labs/agent-skills@web-design-guidelines` (878K installs) — see "Extra skill application" below |
+| **Scope boundary** | This branch adds **no** filters, alerts, or API features. The "Quick alerts" section existed on `main` unchanged. The diff is 2736 lines of skill rule files + ~436 lines of actual code changes. |
+
+## Checklist
+
+- [x] Skill discovery documented below with exact `npx skills find` commands
+- [x] Extra skill choice reasoned and changes itemised
+- [x] All changes are skill-driven improvements only (no new feature scope)
+- [x] `npm run lint` passes, `npm test` passes (11/11), `npm run build` passes
+
 ## Scope
 
 This stage is limited to concrete frontend quality improvements informed by

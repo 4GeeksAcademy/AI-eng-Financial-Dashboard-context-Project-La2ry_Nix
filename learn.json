@@ -10,5 +10,5 @@
   "repository": "https://github.com/La2ryx/Influencer_Dashboard_FT-AI_Engr-La2ry_Nix",
   "projectType": "project",
   "difficulty": "intermediate",
-  "technologies": ["HTML", "CSS", "JavaScript", "Chart.js", "IntersectionObserver"]
+  "technologies": ["HTML", "CSS", "JavaScript", "IntersectionObserver", "Custom chart renderer"]
 }
