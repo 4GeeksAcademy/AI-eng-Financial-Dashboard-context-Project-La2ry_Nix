@@ -14,7 +14,8 @@
     <script src="dashboard.js" defer></script>
   </head>
   <body class="min-h-screen bg-slate-100 p-4 text-slate-800 antialiased sm:p-6 lg:p-8">
-    <main class="mx-auto max-w-7xl space-y-6">
+    <a href="#main-content" class="skip-link sr-only focus:not-sr-only focus:absolute focus:px-4 focus:py-3">Skip to main content</a>
+    <main id="main-content" class="mx-auto max-w-7xl space-y-6">
       <header class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
         <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
@@ -70,10 +71,11 @@
       <section class="grid gap-4 lg:grid-cols-3">
         <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <div class="mb-5 flex items-center justify-between">
-            <h2 class="text-lg font-semibold text-slate-900">Revenue by product</h2>
+            <h2 class="text-lg font-semibold text-slate-900">Product&nbsp;A generates the highest revenue at $4,000</h2>
             <span class="text-xs font-medium text-slate-500">Share</span>
           </div>
-          <div class="lazy-chart" data-lazy-chart data-scale="total">
+          <p class="mb-3 text-sm text-slate-500">Revenue split across three products for the last 30&nbsp;days. Product&nbsp;A accounts for 40% of total sales, followed by Product&nbsp;B and Product&nbsp;C.</p>
+          <div class="lazy-chart" data-lazy-chart data-scale="total" role="img" aria-label="Revenue by product: Product A leads with $4,000, followed by Product B at $3,000 and Product C at $2,960">
             <div class="chart-output" aria-hidden="true"></div>
             <p class="chart-placeholder text-sm text-slate-500">Chart loads when it enters the viewport&hellip;</p>
             <table class="sr-only" data-chart-data>
@@ -86,13 +88,15 @@
               </tbody>
             </table>
           </div>
+          <p class="mt-2 text-xs text-slate-400">Source: Platform sales data &middot; As of Nov&nbsp;19,&nbsp;2026</p>
         </article>
 
         <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <div class="mb-5 flex items-center justify-between">
-            <h2 class="text-lg font-semibold text-slate-900">Platform performance</h2>
+            <h2 class="text-lg font-semibold text-slate-900">Instagram delivers the strongest return at 4.8x ROAS</h2>
             <span class="text-xs font-medium text-slate-500">ROAS</span>
           </div>
+          <p class="mb-3 text-sm text-slate-500">Return on ad spend by platform. Instagram and TikTok outperform YouTube by a wide margin across reach and engagement.</p>
           <div class="space-y-4">
             <div class="rounded-xl bg-slate-50 p-3">
               <div class="flex items-center justify-between text-sm">
@@ -116,14 +120,16 @@
               <p class="mt-2 text-xs text-slate-500">18.8k reach · 4.8% engagement</p>
             </div>
           </div>
+          <p class="mt-2 text-xs text-slate-400">Source: Platform ad accounts &middot; As of Nov&nbsp;19,&nbsp;2026</p>
         </article>
 
         <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
           <div class="mb-5 flex items-center justify-between">
-            <h2 class="text-lg font-semibold text-slate-900">Conversion funnel</h2>
+            <h2 class="text-lg font-semibold text-slate-900">Only 0.16% of reach converts to a sale</h2>
             <span class="text-xs font-medium text-slate-500">Stage</span>
           </div>
-          <div class="lazy-chart" data-lazy-chart data-scale="maximum">
+          <p class="mb-3 text-sm text-slate-500">Conversion funnel across all platforms. The largest drop happens between reach and clicks &mdash; fewer than 4% of reached users take the next step.</p>
+          <div class="lazy-chart" data-lazy-chart data-scale="maximum" role="img" aria-label="Conversion funnel: 90,300 reached, 3,500 clicked through, 142 converted">
             <div class="chart-output" aria-hidden="true"></div>
             <p class="chart-placeholder text-sm text-slate-500">Chart loads when it enters the viewport&hellip;</p>
             <table class="sr-only" data-chart-data>
@@ -136,6 +142,7 @@
               </tbody>
             </table>
           </div>
+          <p class="mt-2 text-xs text-slate-400">Source: Platform analytics &middot; As of Nov&nbsp;19,&nbsp;2026</p>
         </article>
       </section>
 

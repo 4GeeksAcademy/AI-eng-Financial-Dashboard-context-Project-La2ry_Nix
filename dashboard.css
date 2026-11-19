@@ -1,5 +1,15 @@
-.lazy-chart {
-  min-height: 11rem;
+/* Skip link — visible only when focused */
+.skip-link {
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 50;
+  border-radius: 0.5rem;
+}
+
+/* Visible focus indicator for all interactive elements */
+:focus-visible {
+  outline: 2px solid #8b5cf6;
+  outline-offset: 2px;
 }
 
 .chart-rows {
@@ -44,4 +54,9 @@
     from { transform: scaleX(0); }
     to { transform: scaleX(1); }
   }
+}
+
+/* Chart container reserves height before hydration */
+.lazy-chart {
+  min-height: 11rem;
 }
