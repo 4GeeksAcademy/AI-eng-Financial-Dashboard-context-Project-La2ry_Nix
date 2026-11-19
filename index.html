@@ -8,6 +8,7 @@
       name="description"
       content="Track creator commissions, product revenue, platform performance, and conversion results in your influencer analytics dashboard."
     />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="dashboard.css" />
     <script src="dashboard.js" defer></script>
@@ -17,11 +18,12 @@
       <header class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
         <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-violet-500">Creator dashboard</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-violet-500">Creator intelligence &middot; Overview</p>
             <h1 class="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">Influencer Performance Dashboard</h1>
+            <p class="hero-copy mt-2 max-w-2xl text-sm text-slate-500">A clear view of your commissions, product sales, and channel performance&mdash;so you can focus on what's working.</p>
           </div>
           <div class="flex items-center gap-3 self-start rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-600 md:self-auto">
-            <span class="inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+            <span aria-hidden="true" class="inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
             Last 30 days
           </div>
         </div>
@@ -73,7 +75,7 @@
           </div>
           <div class="lazy-chart" data-lazy-chart data-scale="total">
             <div class="chart-output" aria-hidden="true"></div>
-            <p class="chart-placeholder text-sm text-slate-500">Chart loads when it enters the viewport.</p>
+            <p class="chart-placeholder text-sm text-slate-500">Chart loads when it enters the viewport&hellip;</p>
             <table class="sr-only" data-chart-data>
               <caption>Revenue by product in US dollars</caption>
               <thead><tr><th scope="col">Product</th><th scope="col">Revenue</th></tr></thead>
@@ -123,7 +125,7 @@
           </div>
           <div class="lazy-chart" data-lazy-chart data-scale="maximum">
             <div class="chart-output" aria-hidden="true"></div>
-            <p class="chart-placeholder text-sm text-slate-500">Chart loads when it enters the viewport.</p>
+            <p class="chart-placeholder text-sm text-slate-500">Chart loads when it enters the viewport&hellip;</p>
             <table class="sr-only" data-chart-data>
               <caption>Conversion funnel counts</caption>
               <thead><tr><th scope="col">Stage</th><th scope="col">Count</th></tr></thead>
