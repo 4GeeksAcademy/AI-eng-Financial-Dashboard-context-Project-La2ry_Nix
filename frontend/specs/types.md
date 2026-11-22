@@ -226,3 +226,51 @@ Defined in `dashboard.css` for theming:
 | `change` | `#platform-filter` | Sets `chosenPlatform`, re-renders all sections |
 | `change` | `#period-filter` | Re-filters `dailyRecords`, re-aggregates, re-renders |
 | `click` | `#theme-toggle` | Toggles `data-theme` on `<html>`, persists to `localStorage` |
+
+---
+
+## Filter Types
+
+### `FilterRequest`
+
+Describes the current filter state derived from DOM elements.
+
+```typescript
+interface FilterRequest {
+  /** Days to include: 0 = all data, 7|30|60 = last N days */
+  daysBack: number;
+  /** Selected platform name, or "all" for no platform filtering */
+  platform: string;
+  /** Product table search text (case-insensitive substring) */
+  searchQuery: string;
+  /** Sort key for product table: "revenue" | "name" | "units" | "commission" */
+  sortKey: string;
+}
+```
+
+**Default values:**
+
+| Field | Default | DOM Source |
+|---|---|---|
+| `daysBack` | `30` | `#period-filter` value → `Number()` or `0` for `"all"` |
+| `platform` | `"all"` | `#platform-filter` value |
+| `searchQuery` | `""` | `#product-search` value |
+| `sortKey` | `"revenue"` | `#product-sort` value |
+
+**Nullable handling:** `daysBack` of `NaN` or negative → fall back to `30`. Empty `platform` → treated as `"all"`.
+
+### `FilterResponse`
+
+The aggregated result returned by the client-side pipeline.
+
+```typescript
+interface FilterResponse {
+  products:   ProductSummary[];   // Filtered + sorted product list
+  platforms:  PlatformSummary[];  // Filtered platform aggregates
+  summary:    Summary;            // KPI summary of filtered data
+  chartData:  {
+    revenue:  ChartRow[];         // Revenue-per-product for Chart.js
+    funnel:   ChartRow[];         // Funnel stages for Chart.js
+  };
+}
+```

@@ -33,15 +33,22 @@ Edit `data/dashboard.json` to update products, platforms, alerts, reporting peri
 
 ## Edge cases
 
+### Dashboard quality
+
+1. **Missing date range:** If `data/dashboard.json` lacks a `period` field or the `asOf` date is invalid, `getAsOf()` falls back to `new Date()`. The `[data-period]` elements display the derived fallback label (e.g. `"Last 30 days"`), and `[data-as-of]` shows today's date. No crash or blank page occurs — the dashboard renders with the current server clock as the reference.
+2. **Empty dataset:** If `data/dashboard.json` contains empty arrays for `products`, `platforms`, `dailyRecords`, or `alerts`, every aggregation function returns `[]` or zeroed values. The product table shows `"No matching products."`, platform list shows `"No data for this period."`, KPIs display `$0`, `0`, `0.0%`, and the alerts sidebar is empty. Chart containers render an empty canvas with the accessible data-table showing no rows.
+
 ### KPI overview
 
 1. **Zero revenue period:** If the selected date range contains no sales data, KPIs display `$0`, `0`, `0.0%` — they never show `NaN`, `undefined`, or stale values from a previous render. The commission calculation (`revenue × commissionRate`) safely produces `0`.
-2. **Extremely high engagement rate:** If a platform's `engagementRate` exceeds the typical 0–100% range (e.g. the sample data contains `198.0`), the dashboard renders it verbatim with one decimal place. No clamping or capping is applied — the raw calculated value is always shown.
+2. **Null values in data:** If any `ProductSummary`, `PlatformSummary`, or `DailyRecord` field is `null` or `undefined`, aggregation functions coerce the value through arithmetic (e.g. `(value || 0)` or unary `+`), resulting in `0` for that record's contribution. The field is treated as a missing data point rather than causing a `NaN` propagation. No error is thrown, and the remaining valid records still contribute correctly.
+3. **Extremely high engagement rate:** If a platform's `engagementRate` exceeds the typical 0–100% range (e.g. the sample data contains `198.0`), the dashboard renders it verbatim with one decimal place. No clamping or capping is applied — the raw calculated value is always shown.
 
 ### Chart.js visualizations
 
 1. **Empty chart data:** When filtered records produce zero products or funnel stages, `renderChart([], …)` returns an explicit `<p class="text-sm text-slate-500">No chart data available.</p>` message. Chart.js receives `labels: []` and `data: []` and renders a blank canvas; no JavaScript error occurs.
-2. **IntersectionObserver not available:** If the browser lacks `IntersectionObserver` (legacy browsers), `initializeCharts` falls back by calling `queue()` synchronously on every chart element — all charts render immediately without lazy-loading. The `chart-placeholder` elements are hidden on success.
+2. **Single data point:** If filtering reduces the dataset to exactly one product or funnel stage, `renderChart` receives a single-element array. Chart.js renders a one-bar canvas correctly with the label and value shown. Both the accessible data table and the chart show exactly one row.
+3. **IntersectionObserver not available:** If the browser lacks `IntersectionObserver` (legacy browsers), `initializeCharts` falls back by calling `queue()` synchronously on every chart element — all charts render immediately without lazy-loading. The `chart-placeholder` elements are hidden on success.
 
 ### JSON data source
 

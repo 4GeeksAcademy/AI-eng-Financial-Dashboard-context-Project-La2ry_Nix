@@ -132,3 +132,93 @@
 4. **Date integrity:** All `DailyRecord.date` values must parse as ISO 8601 dates and fall within the implied period `[asOf - period, asOf]`.
 5. **Non‑negative numerics:** All numeric fields (`price`, `units`, `revenue`, `reach`, etc.) must be >= 0.
 6. **Alert tone enum:** `tone` must be one of `"warning"`, `"success"`, or `"info"`.
+
+---
+
+## In-Memory Filter Pipeline Contracts
+
+The dashboard computes all filtered views client-side. These contracts describe the internal shapes used by the filter→aggregate→render pipeline.
+
+### Filter Request
+
+Describes the current filter state after a user interaction. Always derived from DOM elements — no server round trip.
+
+```typescript
+interface FilterRequest {
+  /** Days to include: 0 = all data, 7|30|60 = last N days */
+  daysBack: number;
+  /** Selected platform name, or "all" for no filtering */
+  platform: string;
+  /** Product table search text (case-insensitive substring) */
+  searchQuery: string;
+  /** Sort key for product table: "revenue" | "name" | "units" | "commission" */
+  sortKey: string;
+}
+```
+
+**Default values:**
+
+| Field | Default | Source |
+|---|---|---|
+| `daysBack` | `30` | `#period-filter` value |
+| `platform` | `"all"` | `#platform-filter` value |
+| `searchQuery` | `""` | `#product-search` value |
+| `sortKey` | `"revenue"` | `#product-sort` value |
+
+**Nullable / partial handling:**
+- `daysBack`: `0` is valid (all data); `NaN` or negative → fall back to `30`.
+- `platform`: `"all"` or missing → no platform filter applied.
+- `searchQuery`: empty string → no text filter applied.
+- `sortKey`: unrecognised value → fall back to `"revenue"`.
+
+### Filter Response
+
+The aggregated result returned by the client-side pipeline. **Not a network response** — computed synchronously in memory.
+
+```typescript
+interface FilterResponse {
+  products:   ProductSummary[];  // Filtered + sorted product list
+  platforms:  PlatformSummary[]; // Filtered platform aggregates
+  summary:    Summary;           // KPI summary of filtered data
+  chartData:  {
+    revenue:  ChartRow[];        // Revenue per product for Chart.js
+    funnel:   ChartRow[];        // Conversion funnel stages for Chart.js
+  };
+}
+```
+
+### Metrics (KPI) Contract
+
+The shape returned by `summarize()`. All numeric fields are guaranteed to be valid numbers (never `NaN` or `Infinity`).
+
+```typescript
+interface Summary {
+  revenue:         number;   // Total revenue — filtered platform sum
+  sales:           number;   // Total units sold — filtered product sum
+  commission:      number;   // revenue × commissionRate
+  engagementRate:  number;   // Reach-weighted average (0–…, unclamped)
+  reach:           number;   // Total reach of filtered platforms
+  clicks:          number;   // Total clicks of filtered platforms
+  conversions:     number;   // Total conversions of filtered platforms
+}
+```
+
+**Edge-case values:**
+- Empty filtered set → all fields are `0` (including engagement rate as `0`).
+- Commission is calculated as `summary.revenue * data.commissionRate` — if revenue is `0`, commission is `0`.
+- Engagement rate is reach-weighted: `sum(platform.reach * platform.engagementRate) / totalReach`. If `totalReach` is `0`, engagement rate is `0`.
+
+### Chart Data Contract
+
+The shape consumed by Chart.js and the accessible fallback table.
+
+```typescript
+interface ChartRow {
+  label:  string;   // Bar label (HTML-escaped)
+  value:  string;   // Formatted display value (e.g. "$4,000")
+  amount: number;   // Raw numeric value for bar sizing
+}
+```
+
+**Empty chart:** `ChartRow[]` of length `0` — renderers show `"No chart data available."`.
+**Single row:** Length `1` — rendered as a single bar spanning the full width.
