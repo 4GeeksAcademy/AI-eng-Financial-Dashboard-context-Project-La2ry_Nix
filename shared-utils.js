@@ -1,0 +1,8 @@
+(function (root) {
+  "use strict";
+  root.escapeHtml = function escapeHtml(value) {
+    return String(value).replace(/[&<>"']/g, (character) => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+    })[character]);
+  };
+})(typeof window !== "undefined" ? window : globalThis);

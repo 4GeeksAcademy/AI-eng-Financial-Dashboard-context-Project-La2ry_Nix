@@ -1,15 +1,19 @@
-/* Skip link — visible only when focused */
-.skip-link {
-  top: 0.5rem;
-  left: 0.5rem;
-  z-index: 50;
-  border-radius: 0.5rem;
+.lazy-chart {
+  position: relative;
+  min-height: 11rem;
 }
 
-/* Visible focus indicator for all interactive elements */
-:focus-visible {
-  outline: 2px solid #8b5cf6;
-  outline-offset: 2px;
+.lazy-chart canvas {
+  display: block;
+  width: 100% !important;
+  height: 11rem !important;
+}
+
+.chart-source {
+  margin-top: 0.875rem;
+  color: #64748b;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
 }
 
 .chart-rows {
@@ -56,7 +60,68 @@
   }
 }
 
-/* Chart container reserves height before hydration */
-.lazy-chart {
-  min-height: 11rem;
+:root {
+  color-scheme: light;
+  --page-bg: #f1f5f9;
+  --panel-bg: #ffffff;
+  --panel-muted: #f8fafc;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page-bg: #0b1120;
+  --panel-bg: #111c2e;
+  --panel-muted: #18263b;
+  --text-main: #e2e8f0;
+  --text-muted: #9aaac0;
+  --border-color: #2b3b52;
+}
+
+body {
+  background-color: var(--page-bg) !important;
+  color: var(--text-main) !important;
+}
+
+body :is(.bg-white) { background-color: var(--panel-bg) !important; }
+body :is(.bg-slate-50, .bg-slate-100) { background-color: var(--panel-muted) !important; }
+body :is(.text-slate-900, .text-slate-800, .text-slate-700) { color: var(--text-main) !important; }
+body :is(.text-slate-600, .text-slate-500) { color: var(--text-muted) !important; }
+body :is(.border-slate-100, .border-slate-200) { border-color: var(--border-color) !important; }
+
+.filter-control {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.filter-control :is(input, select),
+.theme-toggle {
+  min-height: 2.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  background: var(--panel-bg);
+  color: var(--text-main);
+  padding: 0.5rem 0.75rem;
+  font: inherit;
+}
+
+.theme-toggle {
+  align-self: end;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.filter-control :is(input, select):focus-visible,
+.theme-toggle:focus-visible {
+  outline: 3px solid #8b5cf6;
+  outline-offset: 2px;
+}
+
+.chart-source {
+  color: var(--text-muted);
 }

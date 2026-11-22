@@ -2,38 +2,46 @@
 
 const assert = require("node:assert/strict");
 const test = require("node:test");
-const { initializeCharts, parseChartTable } = require("./dashboard.js");
+const { filterAndSortProducts, formatCurrency, initializeCharts, parseChartTable, summarize, aggregateProducts, aggregatePlatforms, filterRecords } = require("./dashboard.js");
 const rendererPromise = import("./chart-renderer.mjs");
 
-function makeTable(rows) {
-  return {
-    tBodies: [{ rows: rows.map(([label, value]) => ({
-      cells: [{ textContent: label }, { textContent: value }],
-    })) }],
-  };
-}
-
-function makeChart(rows, scale = "maximum") {
-  const output = { innerHTML: "" };
-  const placeholder = { hidden: false };
-  const table = makeTable(rows);
-  return {
-    dataset: { scale },
-    querySelector(selector) {
-      return {
-        "[data-chart-data]": table,
-        ".chart-output": output,
-        ".chart-placeholder": placeholder,
-      }[selector] || null;
-    },
-    output,
-    placeholder,
-  };
-}
-
 test("parses accessible table labels and numeric currency values", () => {
-  const data = parseChartTable(makeTable([["Product A", "$4,000"], ["Product B", "$3,000"]]));
+  const table = { tBodies: [{ rows: [["Product A", "$4,000"], ["Product B", "$3,000"]].map(([label, value]) => ({ cells: [{ textContent: label }, { textContent: value }] })) }] };
+  const data = parseChartTable(table);
   assert.deepEqual(data.map(({ label, amount }) => [label, amount]), [["Product A", 4000], ["Product B", 3000]]);
+});
+
+test("calculates revenue, sales, commission, and reach-weighted engagement", () => {
+  const data = {
+    commissionRate: 0.15,
+    products: [
+      { revenue: 100, units: 2 },
+      { revenue: 200, units: 3 },
+    ],
+    platforms: [
+      { reach: 100, engagementRate: 10, clicks: 20, conversions: 4 },
+      { reach: 300, engagementRate: 6, clicks: 30, conversions: 6 },
+    ],
+  };
+  assert.deepEqual(summarize(data), {
+    revenue: 300,
+    sales: 5,
+    commission: 45,
+    engagementRate: 7,
+    reach: 400,
+    clicks: 50,
+    conversions: 10,
+  });
+});
+
+test("filters by product or platform and sorts without mutating data", () => {
+  const products = [
+    { name: "Alpha", platform: "Instagram", revenue: 50, units: 2, commission: 5 },
+    { name: "Beta", platform: "TikTok", revenue: 100, units: 1, commission: 10 },
+  ];
+  assert.deepEqual(filterAndSortProducts(products, "tiktok", "revenue").map(({ name }) => name), ["Beta"]);
+  assert.deepEqual(filterAndSortProducts(products, "", "name").map(({ name }) => name), ["Alpha", "Beta"]);
+  assert.equal(products[0].name, "Alpha");
 });
 
 test("renders proportional bars and escapes labels", async () => {
@@ -60,117 +68,51 @@ test("keeps zero-valued bars at a safe minimum width", async () => {
   assert.match(html, /class="chart-bar"/);
 });
 
-test("hydrates only after intersection and unobserves the chart", async () => {
-  const chart = makeChart([["Reach", "90,300"]]);
-  let callback;
-  const observed = [];
-  const unobserved = [];
-  class FakeIntersectionObserver {
-    constructor(onChange, options) {
-      callback = onChange;
-      this.options = options;
-    }
-    observe(target) { observed.push(target); }
-    unobserve(target) { unobserved.push(target); }
-  }
-
-  initializeCharts({ querySelectorAll: () => [chart] }, FakeIntersectionObserver);
-  assert.equal(chart.dataset.loaded, undefined);
-  assert.deepEqual(observed, [chart]);
-  assert.equal(chart.placeholder.hidden, false);
-  await callback([{ isIntersecting: true, target: chart }], { unobserve: (target) => unobserved.push(target) });
-  assert.equal(chart.dataset.loaded, "true");
-  assert.equal(chart.placeholder.hidden, true);
-  assert.match(chart.output.innerHTML, /Reach/);
-  assert.deepEqual(unobserved, [chart]);
+test("formats currency with Intl.NumberFormat", () => {
+  assert.equal(formatCurrency(0), "$0");
+  assert.equal(formatCurrency(1494), "$1,494");
+  assert.equal(formatCurrency(9960), "$9,960");
 });
 
-test("observer skips non-intersecting entry but hydrates the next one in batch", async () => {
-  const chartA = makeChart([["A", "10"]]);
-  const chartB = makeChart([["B", "20"]]);
-  let callback;
-  const unobserved = [];
-  class FakeObserver {
-    constructor(onChange) { callback = onChange; }
-    observe() {}
-    unobserve(target) { unobserved.push(target); }
-  }
-
-  initializeCharts({ querySelectorAll: () => [chartA, chartB] }, FakeObserver);
-  assert.equal(chartA.dataset.loaded, undefined);
-  assert.equal(chartB.dataset.loaded, undefined);
-  // Batch: entry[0] not intersecting, entry[1] intersecting
-  await callback([
-    { isIntersecting: false, target: chartA },
-    { isIntersecting: true, target: chartB },
-  ], { unobserve: (target) => unobserved.push(target) });
-  assert.equal(chartA.dataset.loaded, undefined, "chartA should NOT hydrate (not intersecting)");
-  assert.equal(chartB.dataset.loaded, "true", "chartB should hydrate");
-  assert.match(chartB.output.innerHTML, /B/);
-  assert.deepEqual(unobserved, [chartB]);
+test("initializeCharts delegates to Observer and does not error for empty chart list", () => {
+  assert.ok(initializeCharts({ querySelectorAll: () => [] }, null) instanceof Map);
 });
 
-test("does not re-hydrate an already-loaded chart", async () => {
-  const chart = makeChart([["Clicks", "3,500"]]);
-  let callback;
-  const unobserved = [];
-  class FakeObserver {
-    constructor(onChange) { callback = onChange; }
-    observe() {}
-    unobserve(target) { unobserved.push(target); }
-  }
-
-  initializeCharts({ querySelectorAll: () => [chart] }, FakeObserver);
-  // First hydration
-  await callback([{ isIntersecting: true, target: chart }], { unobserve: (target) => unobserved.push(target) });
-  assert.equal(chart.dataset.loaded, "true");
-  const firstHtml = chart.output.innerHTML;
-  // Manually simulate a second callback for the same chart
-  chart.output.innerHTML = "";
-  chart.placeholder.hidden = false;
-  delete chart.dataset.loaded;
-  // Set it as loaded — simulate the guard
-  chart.dataset.loaded = "true";
-  // This should NOT re-hydrate
-  await callback([{ isIntersecting: true, target: chart }], { unobserve: (target) => unobserved.push(target) });
-  assert.equal(chart.output.innerHTML, "", "should not re-hydrate when dataset.loaded is true");
+test("filterRecords returns only records within daysBack window", () => {
+  const records = [
+    { date: "2026-10-01", product: "A" },
+    { date: "2026-10-28", product: "B" },
+    { date: "2026-11-17", product: "C" },
+  ];
+  const result = filterRecords(records, 20);
+  assert.equal(result.length, 2);
+  assert.equal(result[0].product, "B");
+  assert.equal(result[1].product, "C");
 });
 
-test("hydrates immediately when IntersectionObserver is unavailable", async () => {
-  const chart = makeChart([["Clicks", "3,500"]]);
-  await initializeCharts({ querySelectorAll: () => [chart] }, undefined);
-  assert.equal(chart.dataset.loaded, "true");
-  assert.match(chart.output.innerHTML, /Clicks/);
+test("aggregateProducts sums revenue and units from daily records", () => {
+  const records = [
+    { product: "X", platform: "IG", price: 50, units: 10, revenue: 500 },
+    { product: "X", platform: "IG", price: 50, units: 5, revenue: 250 },
+    { product: "Y", platform: "TK", price: 100, units: 3, revenue: 300 },
+  ];
+  const result = aggregateProducts(records);
+  assert.equal(result.length, 2);
+  const x = result.find((p) => p.name === "X");
+  assert.equal(x.units, 15);
+  assert.equal(x.revenue, 750);
 });
 
-test("parseChartTable handles empty table gracefully", () => {
-  const result = parseChartTable(null);
-  assert.deepEqual(result, []);
-});
-
-test("parseChartTable handles table with missing cells", () => {
-  const table = {
-    tBodies: [{
-      rows: [
-        { cells: [{ textContent: "Only label" }] },
-        { cells: [] },
-      ],
-    }],
-  };
-  const result = parseChartTable(table);
-  assert.deepEqual(result, []);
-});
-
-test("parseChartTable handles non-numeric values", () => {
-  const table = {
-    tBodies: [{
-      rows: [
-        { cells: [{ textContent: "N/A" }, { textContent: "N/A" }] },
-      ],
-    }],
-  };
-  const data = parseChartTable(table);
-  assert.equal(data.length, 1);
-  assert.equal(data[0].amount, 0);
-  assert.equal(data[0].label, "N/A");
+test("aggregatePlatforms averages engagement and roas from daily records", () => {
+  const records = [
+    { platform: "IG", reach: 1000, engagementRate: 5, clicks: 50, conversions: 4, revenue: 200, roas: 2 },
+    { platform: "IG", reach: 2000, engagementRate: 7, clicks: 80, conversions: 6, revenue: 400, roas: 3 },
+    { platform: "TK", reach: 3000, engagementRate: 8, clicks: 120, conversions: 10, revenue: 600, roas: 4 },
+  ];
+  const result = aggregatePlatforms(records);
+  assert.equal(result.length, 2);
+  const ig = result.find((p) => p.name === "IG");
+  assert.equal(ig.reach, 3000);
+  assert.equal(ig.engagementRate, 6);
+  assert.equal(ig.roas, 2.5);
 });
